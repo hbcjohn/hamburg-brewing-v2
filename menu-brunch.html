@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brunch Menu – Hamburg Brewing Company</title>
+  <meta name="description" content="Sunday brunch menu at Hamburg Brewing Company.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="age-gate" class="age-gate-overlay">
+    <div class="age-gate-modal">
+      <h2>Are You 21 or Older?</h2>
+      <div class="age-gate-divider"></div>
+      <p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>
+      <div class="age-gate-buttons">
+        <button class="btn btn-primary" onclick="ageGate.verify()">Yes</button>
+        <button class="btn btn-secondary" onclick="ageGate.deny()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <nav id="main-nav" class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Taproom Menu</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="join-team.html">Join Our Team</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="bus-policy.html">Bus &amp; Limo Policy</a></li>
+      <li><a href="new-account.html">New Account Inquiry</a></li>
+    </ul>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co" loading="eager">
+      </a>
+      <div class="header-right">
+        <button id="search-toggle" class="header-icon" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button id="cart-toggle" class="header-icon" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span id="cart-count" class="cart-count" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Brunch</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="content-body">
+          <p style="margin-bottom: 24px;"><a href="menu.html" style="color: var(--color-brand-dark); text-decoration: none;">← Back to Menus</a></p>
+
+          <p class="menu-note"><em>Available Sundays 10am–12pm Only. Kitchen closes 12pm–12:30pm.</em></p>
+
+          <div class="menu-category">
+            <h2>Breakfast Pizzas</h2>
+            <p class="menu-note">16″ Large $25.99 &nbsp;|&nbsp; 8″ Personal $9.99</p>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">OG Breakfast Pizza</span><span class="item-desc">Scrambled egg, Choice of Sausage or Bacon, 2 Cheese Blend, Maple Sriracha Aioli</span></div>
+              <div class="menu-item"><span class="item-name">Southwest Pizza</span><span class="item-desc">Chipotle Aioli, Roasted Corn and Black Bean Salsa, Scrambled Egg, Monterey Jack, Avocado</span></div>
+              <div class="menu-item"><span class="item-name">Caprese Pizza</span><span class="item-desc">Smoked Olive Oil, Fresh Mozzarella, Cherry Tomatoes, Spinach, Topped with Pesto and Balsamic Drizzle</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Breakfast Sandwiches</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Smokey Bacon, Croissant, Fried Egg, Honey Spiked Goat Cheese and Fresh Fruit</span><span class="item-price">$12.99</span></div>
+              <div class="menu-item"><span class="item-name">Eggs Benedict Breakfast Sandwich</span><span class="item-desc">Split Garlic and Herb Muffin, Black Forest Ham, Poached Egg, Hollandaise, Side Fruit</span><span class="item-price">$14.99</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Brunch Classics</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Beignets (5)</span><span class="item-desc">Powdered Sugar, Strawberry Cider Reduction</span><span class="item-price">$8.99</span></div>
+              <div class="menu-item"><span class="item-name">Smashed Avocado Toast</span><span class="item-desc">Toasted Brioche Toast, Smashed Avocado, Pico de Gallo, Sriracha Aioli, Sunny-Up Eggs</span><span class="item-price">$9.99</span></div>
+              <div class="menu-item"><span class="item-name">Biscuits and Gravy</span><span class="item-desc">2 Biscuits, Sausage Gravy, 2 Eggs, Side Potato Wedges</span><span class="item-price">$10.99</span></div>
+              <div class="menu-item"><span class="item-name">Croissant French Toast (3)</span><span class="item-desc">Croissant Loaf, Vanilla Custard, NY Maple Syrup</span><span class="item-price">$10.99</span></div>
+              <div class="menu-item"><span class="item-name">Red Velvet Chicken and Waffle</span><span class="item-desc">Served with spicy miso maple syrup</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Breakfast Burrito</span><span class="item-desc">Scrambled Egg, Smoked Gouda, Chorizo, Roasted Potato, Maple Sriracha, Pico de Gallo, Lime Sour Cream &amp; Fresh Fruit</span><span class="item-price">$12.99</span></div>
+              <div class="menu-item"><span class="item-name">Waffle Flight</span><span class="item-desc">Hard Cider Drunken Apples, Blueberry Peach Relish, Berry Sneaky Compote &amp; NY Maple Syrup</span><span class="item-price">$14.99</span></div>
+              <div class="menu-item"><span class="item-name">Bacon Swiss &amp; Spinach Frittata</span><span class="item-desc">Chipotle Aioli Drizzle, Side Fruit</span><span class="item-price">$16.99</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Side Stuff</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Breakfast Potato Wedges</span><span class="item-price">$5.99</span></div>
+              <div class="menu-item"><span class="item-name">Side of Bacon (4ea)</span><span class="item-price">$3.99</span></div>
+              <div class="menu-item"><span class="item-name">Sausage Links (4ea)</span><span class="item-price">$3.99</span></div>
+              <div class="menu-item"><span class="item-name">Side of Fruit</span><span class="item-price">$4.99</span></div>
+              <div class="menu-item"><span class="item-name">2 Eggs any Style</span><span class="item-price">$3.49</span></div>
+              <div class="menu-item"><span class="item-name">Side Brioche Toast</span><span class="item-price">$3.49</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Drinks</h2>
+            <p class="menu-note">Regular Beer Menu Available All Day</p>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Sunday Special – Bottomless Mimosas during Brunch</span><span class="item-price">$20 per person</span></div>
+              <div class="menu-item"><span class="item-name">Mimosa</span><span class="item-price">$5</span></div>
+              <div class="menu-item"><span class="item-name">HBC Bloody Mary</span><span class="item-price">$8</span></div>
+              <div class="menu-item"><span class="item-name">Berry Berry Beermosa</span><span class="item-price">$8</span></div>
+              <div class="menu-item"><span class="item-name">Beermosa</span><span class="item-price">$7</span></div>
+              <div class="menu-item"><span class="item-name">Megamosa</span><span class="item-price">$20</span></div>
+              <div class="menu-item"><span class="item-name">Coffee</span></div>
+              <div class="menu-item"><span class="item-name">Juice</span><span class="item-desc">Cranberry, Orange, Pineapple, Grapefruit</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <p>6553 Boston State Rd<br>Hamburg, NY 14075</p>
+          <p><a href="tel:7166493249">(716) 649-3249</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon–Thu: 11:30 AM – 10 PM<br>Fri–Sat: 11:30 AM – 11 PM<br>Sun: 10 AM – 9 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/hamburgbrewingcompany" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com/hamburgbrewing" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://twitter.com/HamburgBrewing" target="_blank" rel="noopener" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Must be 21 or older to consume alcohol. Please drink responsibly.</p>
+        <p>© <span id="year"></span> Hamburg Brewing Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
