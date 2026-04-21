@@ -1,0 +1,41 @@
+[
+  {
+    "id": "gift-card",
+    "name": "HBC Gift Card",
+    "price": 25.00,
+    "priceFrom": 10.00,
+    "image": "https://cdn.shopify.com/s/files/1/0517/3552/7579/files/H_300x.png?v=1678376459",
+    "description": "Give the gift of great beer! Gift cards available in multiple denominations.",
+    "category": "gift-cards",
+    "inStock": true
+  },
+  {
+    "id": "flannel-womens",
+    "name": "Women's Flannel",
+    "price": 50.00,
+    "image": "images/flannel-womens.jpg",
+    "description": "Comfortable and stylish women's flannel shirt with Hamburg Brewing logo.",
+    "category": "apparel",
+    "inStock": true,
+    "sizes": ["XS", "S", "M", "L", "XL"]
+  },
+  {
+    "id": "flannel-mens",
+    "name": "Men's Flannel",
+    "price": 50.00,
+    "image": "images/flannel-mens.jpg",
+    "description": "Classic men's flannel shirt featuring the Hamburg Brewing logo.",
+    "category": "apparel",
+    "inStock": true,
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": "hat-snapback",
+    "name": "Green & Gold Snapback Hat",
+    "price": 15.00,
+    "image": "images/hat-snapback.jpg",
+    "description": "Green and gold snapback hat with embroidered Hamburg Brewing logo.",
+    "category": "accessories",
+    "inStock": true
+  }
+]

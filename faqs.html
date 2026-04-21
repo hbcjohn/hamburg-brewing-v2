@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs – Hamburg Brewing Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .faq-category { margin-bottom: 40px; }
+    .faq-category h3 { font-family: var(--font-heading); font-size: 20px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; color: var(--color-brand); }
+    .faq-item { border-bottom: 1px solid var(--color-border); }
+    .faq-question { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; cursor: pointer; font-weight: 600; font-size: 16px; }
+    .faq-question svg { transition: transform 0.3s ease; flex-shrink: 0; }
+    .faq-item.open .faq-question svg { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-item.open .faq-answer { max-height: 500px; }
+    .faq-answer p { padding: 0 0 20px; color: var(--color-text-light); line-height: 1.7; }
+    .faq-search { width: 100%; padding: 16px 20px; border: 2px solid var(--color-border); border-radius: var(--radius); font-family: var(--font-body); font-size: 16px; margin-bottom: 40px; }
+    .faq-search:focus { outline: none; border-color: var(--color-brand); }
+    .faq-layout { display: grid; grid-template-columns: 200px 1fr; gap: 40px; }
+    @media (max-width: 768px) { .faq-layout { grid-template-columns: 1fr; } }
+    .faq-nav { position: sticky; top: 100px; height: fit-content; }
+    .faq-nav a { display: block; padding: 10px 0; color: var(--color-text-light); text-decoration: none; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--color-border); transition: var(--transition); }
+    .faq-nav a:hover, .faq-nav a.active { color: var(--color-brand); }
+  </style>
+</head>
+<body>
+  <div id="age-gate" class="age-gate-overlay"><div class="age-gate-modal"><h2>Are You 21 or Older?</h2><div class="age-gate-divider"></div><p>By clicking enter you are verifying that you are old enough to consume alcohol.</p><div class="age-gate-buttons"><button class="btn btn-primary" onclick="ageGate.verify()">Yes</button><button class="btn btn-secondary" onclick="ageGate.deny()">No</button></div></div></div>
+
+  <div id="nav-overlay" class="nav-overlay"></div>
+  <nav id="main-nav" class="main-nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="merch.html">Merch</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+
+  <header class="site-header"><div class="header-inner"><div class="header-left"><button id="menu-toggle" class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button></div><a href="index.html" class="logo"><img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co"></a><div class="header-right"><button id="search-toggle" class="header-icon" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button><button id="cart-toggle" class="header-icon" aria-label="Cart"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg><span id="cart-count" class="cart-count" style="display:none">0</span></button></div></div></header>
+
+  <section class="section" style="padding-top:140px;">
+    <div class="container" style="max-width:1000px;">
+      <div class="section-header"><h2>FAQs</h2><div class="section-divider"></div></div>
+      <input type="search" class="faq-search" id="faq-search" placeholder="Start typing...">
+      <div class="faq-layout">
+        <nav class="faq-nav">
+          <a href="#taproom" class="active">Taproom</a>
+          <a href="#donations">Donations</a>
+          <a href="#beer">The Beer</a>
+        </nav>
+        <div id="faq-content">
+          <div class="faq-category" id="taproom">
+            <h3>Taproom</h3>
+            <div class="faq-item"><div class="faq-question">What are your current hours?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Monday - Tuesday: 4:00PM - 10:00PM<br>Wednesday - Saturday: 12:00PM - 10:00PM<br>Sunday: 10:00AM - 8:00PM (Brunch 10am-12pm, Kitchen closed 12-12:30pm)</p></div></div>
+            <div class="faq-item"><div class="faq-question">Do you take reservations?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>We do not take reservations. All seating is first come first served.</p></div></div>
+            <div class="faq-item"><div class="faq-question">Is the patio open?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Yes! Our patio is open seasonally. We are open for both indoor dining and outdoor seating on the patio.</p></div></div>
+            <div class="faq-item"><div class="faq-question">I want to host an event. How do I book?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Interested in hosting your next event at Hamburg Brewing Company? From weddings to work parties, we've got you covered! Please fill out our <a href="contact.html">Book Your Event</a> form.</p></div></div>
+            <div class="faq-item"><div class="faq-question">What is your Bus & Limo Policy?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Please review our full <a href="bus-policy.html">Bus & Limo Policy</a> for details on large group transportation.</p></div></div>
+            <div class="faq-item"><div class="faq-question">Are dogs allowed?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Dogs are welcome on our outdoor patio area. Please keep them leashed and ensure they are well-behaved around other guests.</p></div></div>
+          </div>
+          <div class="faq-category" id="donations">
+            <h3>Donations</h3>
+            <div class="faq-item"><div class="faq-question">Can I request a donation?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Yes! We are happy to consider donation requests for local community events and organizations. Please fill out our <a href="donations.html">donation request form</a> and we'll review your request.</p></div></div>
+          </div>
+          <div class="faq-category" id="beer">
+            <h3>The Beer</h3>
+            <div class="faq-item"><div class="faq-question">Where can I find your beer?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>Our beers are available at the brewery taproom and at select bars, restaurants, and stores throughout Western New York. Check with your local retailer or visit us for the freshest selection.</p></div></div>
+            <div class="faq-item"><div class="faq-question">I want to serve or sell Hamburg beer in my bar, store or restaurant. How do I do it?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-answer"><p>We'd love to partner with you! Please fill out our <a href="new-account.html">New Account Inquiry</a> form and our sales team will get in touch with you.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div class="footer-grid"><div class="footer-col"><h4>Menu</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="merch.html">Merch</a></li></ul></div><div class="footer-col"><h4>Current Taproom Hours</h4><p style="font-size:14px;line-height:2;">Mon-Tue: 4PM-10PM<br>Wed-Sat: 12PM-10PM<br>Sun: 10AM-8PM</p></div><div class="footer-col"><h4>Social</h4><div style="display:flex;gap:16px;margin-top:12px;"><a href="https://www.instagram.com/hamburgbrewing/" target="_blank" rel="noopener" aria-label="Instagram" style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a><a href="https://www.facebook.com/HamburgBrewing/" target="_blank" rel="noopener" aria-label="Facebook" style="width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></div></div></div><div class="footer-bottom"><p>&copy; 2026 Hamburg Brewing Company. All rights reserved.</p></div></footer>
+
+  <div id="cart-overlay" class="cart-drawer-overlay"></div><div id="cart-drawer" class="cart-drawer"><div class="cart-header"><h3>Shopping Cart</h3><button id="cart-close" class="cart-close">&times;</button></div><div id="cart-items" class="cart-items"></div><div class="cart-footer"><div class="cart-subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div><button class="btn btn-primary" style="width:100%;" onclick="alert('Stripe checkout integration coming soon!')">Checkout</button></div></div>
+
+  <div id="search-modal" style="position:fixed;inset:0;background:var(--color-bg-alpha);backdrop-filter:blur(10px);z-index:1003;display:none;flex-direction:column;align-items:center;padding-top:120px;"><div style="width:100%;max-width:600px;padding:0 24px;"><div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;"><input id="search-input" type="search" placeholder="Search..." style="flex:1;padding:16px 20px;border:2px solid var(--color-brand);border-radius:var(--radius);font-family:var(--font-body);font-size:18px;background:transparent;"><button id="search-close" class="header-icon" aria-label="Close search" style="width:48px;height:48px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div><div id="search-results"></div></div></div>
+
+  <a href="https://www.toasttab.com/hamburg-brewing-company/v3" target="_blank" rel="noopener" class="toast-order"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg></a>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        item.classList.toggle('open');
+      });
+    });
+    document.querySelectorAll('.faq-nav a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('.faq-nav a').forEach(l => l.classList.remove('active'));
+        a.classList.add('active');
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2689 @@
+{
+  "auditDate": "2026-04-21T12:06:18.630Z",
+  "baseUrl": "https://www.hamburgbrewing.com",
+  "totalPages": 11,
+  "pages": [
+    {
+      "url": "https://www.hamburgbrewing.com",
+      "slug": "home",
+      "timestamp": "2026-04-21T12-04-42-360Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": true,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://hamburgbrewing.us9.list-manage.com/subscribe/post?u=d0a39b1b23d9e94fe051b5355&id=5e94082f09&f_id=007817e1f0",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "email",
+                "name": "EMAIL",
+                "required": true
+              },
+              {
+                "type": "hidden",
+                "name": "tags",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "b_d0a39b1b23d9e94fe051b5355_5e94082f09",
+                "required": false
+              },
+              {
+                "type": "submit",
+                "name": "subscribe",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "shopify-section js-section__home-slider",
+          "section section--1566456250311 section--full",
+          "home-carousel__title section__title h2 js-sr-loaded",
+          "section__title-text",
+          "home-carousel__title section__title h2 js-sr-loaded",
+          "section__title-text",
+          "home-carousel__title section__title h2 js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__home-custom",
+          "section section--mb-s section--160737411362785ecd",
+          "section__title section__title--desc section__title--center",
+          "section__title-text",
+          "shopify-section js-section__home-intro",
+          "section section--7038defd-714d-469a-b68a-2dfe8b04bec8",
+          "shopify-section js-section__home-promo",
+          "section section--1566456304723 section--full-bg",
+          "home-promo__title section__title",
+          "section__title-text",
+          "home-promo__title section__title",
+          "section__title-text",
+          "home-promo__title section__title",
+          "section__title-text",
+          "shopify-section js-section__home-html",
+          "section section--ff8328ed-3f89-44c2-9e24-d83bf1bd849a",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/WatchGameAtHBC_WebBanner_600x.jpg?v=1776440983",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/MothersDay2026_PromoSlider_600x.jpg?v=1775672727",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/LouieIPA2_PromoSlider_600x.jpg?v=1735829105",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/HBC_FB_PromoSlider_600x.jpg?v=1762524219",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/6thAnniversary-11_copy_300x.jpg?v=1678139337",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/H_300x.png?v=1678376459",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/shutterstock_1031564416_copy_0f8dde25-de20-41d8-a012-02e727eaa254_300x.jpg?v=1678206427",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/aj_0346_300x.jpg?v=1678293314",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/PizzaOnlineOrder_homepage_300x.jpg?v=1703109030",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg",
+            "alt": "",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Playoffs 2026\n                                \n                            \n                            \n                                Come watch the Game at HBC!\n                            \n                            \n                                More Details",
+          "More Details",
+          "Mother's Day\n                                \n                            \n                            \n                                Breakfast Buffet\n                            \n                            \n                                Make Reservation",
+          "Make Reservation",
+          "Big News!\n                                \n                            \n                            \n                                Welcome Flying Bison to the Hamburg Brewing Family!\n                            \n                            \n                                More Details",
+          "More Details",
+          "1",
+          "2",
+          "3",
+          "4",
+          "Buy a Gift Card",
+          "Order Take Out",
+          "What's on tap?\n                                    \n                                \n                                \n                                    Come on down and enjoy one of our signature brews, fine wines, hard drinks, cocktails or delicious food offerings.\n                                \n                                \n                                    Taproom Menu",
+          "Taproom Menu",
+          "HOST WITH US!\n                                    \n                                \n                                \n                                    Interested in hosting your next event at Hamburg Brewing Company? From weddings to work parties, we've got you covered!\n                                \n                                \n                                    BOOK YOUR EVENT",
+          "BOOK YOUR EVENT",
+          "Dinner to-go!\n                                    \n                                \n                                \n                                    We now offer online ordering! What's for dinner tonight? Pizza & Beer! \n                                \n                                \n                                    Order Now",
+          "Order Now",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Hamburg Brewing Company",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/collections/merch",
+      "slug": "_collections_merch",
+      "timestamp": "2026-04-21T12-04-48-969Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "shopify-section js-section__collection",
+          "section",
+          "section__title collection__header-info__title section__title--center js-sr-loaded",
+          "section__title-text collection__header-info__title-text",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/GiftCardNew_300x.jpg?v=1700238825",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/WomensFlannel_Detail_300x.jpg?v=1765308635",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/WomensFlannel_Front_300x.jpg?v=1765308635",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/MensFlannel_Detail_300x.jpg?v=1765308807",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/MensFlannel_Front_300x.jpg?v=1765308807",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/GreenGoldHat2025_2_300x.jpg?v=1748548362",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/GreenGoldHat2025_300x.jpg?v=1748548362",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/RWBHat2025_300x.jpg?v=1748548158",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/RWBHat2025_3_300x.jpg?v=1748548144",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Vest_Detail_300x.jpg?v=1765310152",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Vest_Front_300x.jpg?v=1765310152",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Polo_Detail_300x.jpg?v=1765310397",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Polo_Front_300x.jpg?v=1765310397",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/PortAuthHoodie_Detail_300x.jpg?v=1765311265",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/PerformanceHoodie_Front_300x.jpg?v=1765310650",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Mug1_300x.jpg?v=1765309456",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Mug2_300x.jpg?v=1765309456",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/CircleLogoSticker_300x.jpg?v=1700585923",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/WomensCropZipUp2_300x.jpg?v=1722627568",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/WomensCropZipUp_300x.jpg?v=1722627568",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/CarharttBeanieBack_300x.jpg?v=1702583588",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/CarharttBeanieFront_300x.jpg?v=1702583583",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/BlackQuarterZip2023_logo_300x.jpg?v=1700795468",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/BlackQuarterZip2023_300x.jpg?v=1700795455",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/GreyQuarterZip_logo_f113561f-7dea-4886-8fdc-8ac0d03e16a9_300x.jpg?v=1700232047",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/GreyQuarterZip2023_192b32f6-8cf2-47a0-b915-975bb81f23f0_300x.jpg?v=1700232033",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/products/pintglass_300x.jpg?v=1607426844",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/NewLogoPintGlass2_300x.jpg?v=1765477426",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/NewLogoPintGlass1_300x.jpg?v=1765477426",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/HardCiderGlass2_300x.jpg?v=1765477531",
+            "alt": "",
+            "isProduct": true
+          },
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/HardCiderGlass_300x.jpg?v=1765477531",
+            "alt": "",
+            "isProduct": true
+          }
+        ],
+        "products": 202,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Merch – Hamburg Brewing Company",
+          "description": "Please allow up to 3 days to process order. Local Pick Up at the brewery is available. Change the Ship To section in your cart to see this option.",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/about-us",
+      "slug": "_pages_about_us",
+      "timestamp": "2026-04-21T12-04-54-856Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--page page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          },
+          {
+            "src": "https://cdn.shopify.com/s/files/1/0517/3552/7579/files/6thAnniversary-1_copy_1024x1024.jpg?v=1678137381",
+            "alt": "",
+            "isProduct": false
+          },
+          {
+            "src": "https://cdn.shopify.com/s/files/1/0517/3552/7579/files/patiopanorama_copy_1024x1024.jpg?v=1678137538",
+            "alt": "",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "About Us – Hamburg Brewing Company",
+          "description": "Opened in October of 2013, Hamburg Brewing Company is a production brewing facility complete with an alluring taproom and patio. We invite you to check out our place - just 20 minutes outside of Buffalo, NY - in Hamburg, NY where you can relax, listen to some live local music, and of course, enjoy the great beers we ha",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/contact-us",
+      "slug": "_pages_contact_us",
+      "timestamp": "2026-04-21T12-05-01-925Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--page page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Contact Us – Hamburg Brewing Company",
+          "description": "Have a question? We're here to help! Before you reach out, you may find the answer to your question below, or on the FAQ page here. Hours: Current taproom hours listed at the bottom of this page.  Reservations: We do not take reservations, all seating first come first served. We are open for both indoor dining and out ",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/faqs",
+      "slug": "_pages_faqs",
+      "timestamp": "2026-04-21T12-05-07-964Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/2333/0623/t/70/assets/autocomplete.min.js?v=4264706039149904448",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "shopify-section js-section__faq-page",
+          "section section--page page page--faq faq js-faq-page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "section__title faq__category__title js-sr-loaded",
+          "section__title-text faq__category__title-text",
+          "section__title faq__category__title js-sr-loaded",
+          "section__title-text faq__category__title-text",
+          "section__title faq__category__title",
+          "section__title-text faq__category__title-text",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Contact us",
+          "Contact us",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "FAQs – Hamburg Brewing Company",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/join-our-team",
+      "slug": "_pages_join_our_team",
+      "timestamp": "2026-04-21T12-05-13-438Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--page page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Join Our Team – Hamburg Brewing Company",
+          "description": "Current Openings: FOH ASSISTANT MANAGER LINE COOK PROMOTIONS/BRAND AMBASSADOR BARTENDER BUSSER/FOOD RUNNER DISHWASHER/DISH MACHINE OPERATOR  ",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/donations",
+      "slug": "_pages_donations",
+      "timestamp": "2026-04-21T12-05-49-341Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://form.globosoftware.net/api/front/form/28434/send",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "text",
+                "name": "text",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "text-2",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "text-3",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "phone",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "email",
+                "required": false
+              },
+              {
+                "type": "textarea",
+                "name": "textarea",
+                "required": false
+              },
+              {
+                "type": "radio",
+                "name": "radio",
+                "required": false
+              },
+              {
+                "type": "radio",
+                "name": "radio",
+                "required": false
+              },
+              {
+                "type": "radio",
+                "name": "radio",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "text-4",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "text-5",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "datetime",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "text-6",
+                "required": false
+              },
+              {
+                "type": "text",
+                "name": "text-7",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "page[title]",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "page[href]",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "_keyLabel",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--page page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Submit",
+          "Subscribe",
+          "Search",
+          "Shop now",
+          "−\n            Reduce item quantity by one",
+          "+\n            Increase item quantity by one"
+        ],
+        "meta": {
+          "title": "Donations – Hamburg Brewing Company",
+          "description": "DONATION REQUEST Please note the following before requesting donations Mandatory Criteria Requests must be submitted 30 days prior to requested receipt. Must be described as one of the following: An organization holding a current tax-exempt status under Section 501(c)(3), (4), (6) or (19) of the Internal Revenue Code. ",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/bus-and-limo-policy",
+      "slug": "_pages_bus_and_limo_policy",
+      "timestamp": "2026-04-21T12-05-58-260Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--page page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Bus and Limo Policy – Hamburg Brewing Company",
+          "description": "We appreciate your interest in visiting Hamburg Brewing Company in a responsible manner. We are committed to ensuring all of our guests have a memorable and safe experience during their visit to the Tap Room. In order to best accommodate all guests, we have some guidelines for guests visiting us on hired passenger carr",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/pages/new-account-inquiry",
+      "slug": "_pages_new_account_inquiry",
+      "timestamp": "2026-04-21T12-06-06-779Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--page page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "New Account Inquiry – Hamburg Brewing Company",
+          "description": "Are you interested in serving or selling Hamburg Brewing beer at your bar, restaurant or store?  We would love to talk to you about working together. Please fill out the form below and we'll contact you as soon as possible. ",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/cart",
+      "slug": "_cart",
+      "timestamp": "2026-04-21T12-06-12-664Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--cart cart",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Shop now",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Your Shopping Cart – Hamburg Brewing Company",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    },
+    {
+      "url": "https://www.hamburgbrewing.com/search",
+      "slug": "_search",
+      "timestamp": "2026-04-21T12-06-18-454Z",
+      "features": {
+        "hasAgeGate": true,
+        "hasNewsletterPopup": false,
+        "hasShoppingCart": true,
+        "hasSearch": true,
+        "hasVideo": 0,
+        "hasCarousel": false,
+        "hasToastIntegration": true,
+        "forms": [
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/contact#contact_form",
+            "method": "post",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "form_type",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "utf8",
+                "required": false
+              },
+              {
+                "type": "hidden",
+                "name": "contact[tags]",
+                "required": false
+              },
+              {
+                "type": "email",
+                "name": "contact[email]",
+                "required": false
+              }
+            ]
+          },
+          {
+            "action": "https://www.hamburgbrewing.com/search",
+            "method": "get",
+            "hasFileUpload": false,
+            "fields": [
+              {
+                "type": "hidden",
+                "name": "type",
+                "required": false
+              },
+              {
+                "type": "search",
+                "name": "q",
+                "required": false
+              }
+            ]
+          }
+        ],
+        "scripts": [
+          "https://a.mailmunch.co/widgets/site-871682-558a4110f49bc63e07b5a0c494de4f040bb7be64.js?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/s/files/1/0517/3552/7579/t/2/assets/globo.formbuilder.init.js?v=1680268677&shop=hamburg-brewery.myshopify.com",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-general-helper.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-snap-slider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v3.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v4.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-glider.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-slideshow-v1-v2.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product-media.js",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-product.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+          "https://www.hamburgbrewing.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+          "https://app.preordernowapp.com/widget/javascript?shop=hamburg-brewery.myshopify.com",
+          "https://cdn.shopify.com/extensions/019d8a7b-75dd-7449-b8f0-ac60df611b9f/pagefly-page-builder-248/assets/pagefly-htmlvideo2.js"
+        ],
+        "sections": [
+          "section__title section__title--center age-checker__title js-sr-loaded",
+          "section__title-text",
+          "shopify-section js-section__mobile-draw",
+          "shopify-section js-section__announcement",
+          "shopify-section shopify-section-header js-section__header",
+          "section section--search search-page",
+          "section__title section__title--center js-sr-loaded",
+          "section__title-text h2",
+          "shopify-section js-section__footer",
+          "shopify-section js-section__promo-pop",
+          "section__title promo-pop__title",
+          "section__title-text",
+          "shopify-section js-section__age-checker"
+        ],
+        "images": [
+          {
+            "src": "https://www.hamburgbrewing.com/cdn/shop/files/Untitled-1_500x.png?v=1678207460",
+            "alt": "Hamburg Brewing Company",
+            "isProduct": false
+          }
+        ],
+        "products": 0,
+        "buttons": [
+          "Yes",
+          "No",
+          "Search",
+          "Search",
+          "Subscribe",
+          "Search",
+          "Shop now"
+        ],
+        "meta": {
+          "title": "Search – Hamburg Brewing Company",
+          "ogImage": "http://www.hamburgbrewing.com/cdn/shop/files/HamburgPreview_1200x1200.webp?v=1742304643"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "hasEcommerce": true,
+    "hasAgeGate": true,
+    "hasNewsletter": false,
+    "hasSearch": true,
+    "productCount": 202,
+    "totalImages": 54,
+    "formsFound": [
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://hamburgbrewing.us9.list-manage.com/subscribe/post?u=d0a39b1b23d9e94fe051b5355&id=5e94082f09&f_id=007817e1f0",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "email",
+            "name": "EMAIL",
+            "required": true
+          },
+          {
+            "type": "hidden",
+            "name": "tags",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "b_d0a39b1b23d9e94fe051b5355_5e94082f09",
+            "required": false
+          },
+          {
+            "type": "submit",
+            "name": "subscribe",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://form.globosoftware.net/api/front/form/28434/send",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "text",
+            "name": "text",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text-2",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text-3",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "phone",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "email",
+            "required": false
+          },
+          {
+            "type": "textarea",
+            "name": "textarea",
+            "required": false
+          },
+          {
+            "type": "radio",
+            "name": "radio",
+            "required": false
+          },
+          {
+            "type": "radio",
+            "name": "radio",
+            "required": false
+          },
+          {
+            "type": "radio",
+            "name": "radio",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text-4",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text-5",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "datetime",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text-6",
+            "required": false
+          },
+          {
+            "type": "text",
+            "name": "text-7",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "page[title]",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "page[href]",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "_keyLabel",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/contact#contact_form",
+        "method": "post",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "form_type",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "utf8",
+            "required": false
+          },
+          {
+            "type": "hidden",
+            "name": "contact[tags]",
+            "required": false
+          },
+          {
+            "type": "email",
+            "name": "contact[email]",
+            "required": false
+          }
+        ]
+      },
+      {
+        "action": "https://www.hamburgbrewing.com/search",
+        "method": "get",
+        "hasFileUpload": false,
+        "fields": [
+          {
+            "type": "hidden",
+            "name": "type",
+            "required": false
+          },
+          {
+            "type": "search",
+            "name": "q",
+            "required": false
+          }
+        ]
+      }
+    ]
+  }
+}
