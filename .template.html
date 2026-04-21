@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donations – Hamburg Brewing Company</title>
-  <meta name="description" content="Request a donation from Hamburg Brewing Company.">
+  <title>PAGE_TITLE_PLACEHOLDER</title>
+  <meta name="description" content="PAGE_DESC_PLACEHOLDER">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -74,87 +74,20 @@
   <main>
     <section class="page-header">
       <div class="container">
-        <h1>Donations</h1>
+        <h1>PAGE_H1_PLACEHOLDER</h1>
       </div>
     </section>
 
     <section class="content-section">
       <div class="container">
         <div class="content-body">
-          <h2>Donation Request</h2>
-          <p>Please note the following before requesting donations.</p>
-
-          <h3>Mandatory Criteria</h3>
-          <p>Must be described as one of the following:</p>
-          <ul>
-            <li>An organization holding a current tax-exempt status under Section 501(c)(3), (4), (6) or (19) of the Internal Revenue Code.</li>
-            <li>A recognized government entity: state, county, or city agency, including law enforcement or fire departments, that are requesting goods exclusively for public purposes.</li>
-          </ul>
-          <p><em>Due to the nature of our products, we cannot donate to any school-related events or organizations.</em></p>
-
-          <h3>Selection Process</h3>
-          <ul>
-            <li>We will review and make initial funding decisions on all requests submitted 30 days prior to the required donation date.</li>
-            <li>Applications are typically reviewed within 14 days of the submission date. Organizations will be notified of decisions via email or phone. All funding decisions are final.</li>
-            <li>Upon approval, donations may be picked up at our taproom during operating hours.</li>
-          </ul>
-          <p>Due to a high frequency of donation requests, we can only make contributions to a select amount of request submissions.</p>
-
-          <h3>Make an Official Donation Request</h3>
-          <p>Please fill out the form below. Requests will be reviewed within 2–3 weeks and the contact person will be notified on approval.</p>
-
-          <form class="contact-form" action="mailto:info@hamburgbrewing.com?subject=Donation Request" method="post" enctype="text/plain">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="org-name">Organization Name *</label>
-                <input type="text" id="org-name" name="Organization Name" required>
-              </div>
-              <div class="form-group">
-                <label for="tax-id">Tax ID Number *</label>
-                <input type="text" id="tax-id" name="Tax ID" required>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-name">Contact Name *</label>
-                <input type="text" id="contact-name" name="Contact Name" required>
-              </div>
-              <div class="form-group">
-                <label for="contact-email">Contact Email *</label>
-                <input type="email" id="contact-email" name="Contact Email" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="contact-phone">Contact Phone</label>
-              <input type="tel" id="contact-phone" name="Contact Phone">
-            </div>
-            <div class="form-group">
-              <label for="event-date">Event Date *</label>
-              <input type="date" id="event-date" name="Event Date" required>
-            </div>
-            <div class="form-group">
-              <label for="donation-type">Type of Donation Requested *</label>
-              <select id="donation-type" name="Donation Type" required>
-                <option value="">Select one...</option>
-                <option value="Beer/Wine">Beer / Wine</option>
-                <option value="Gift Card">Gift Card</option>
-                <option value="Merchandise">Merchandise</option>
-                <option value="Event Space">Event Space</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell us about your organization and event *</label>
-              <textarea id="message" name="Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit Donation Request</button>
-          </form>
+          PAGE_CONTENT_PLACEHOLDER
         </div>
       </div>
     </section>
   </main>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
@@ -203,6 +136,58 @@
       </div>
     </div>
   </footer>
+
+  <!-- Cart Drawer -->
+  <div id="cart-overlay" class="cart-drawer-overlay"></div>
+  <div id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button id="cart-close" class="cart-close">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="opacity:0.4;">
+          <path d="M6 6h15l-1.5 9h-12z"/>
+          <circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/>
+          <path d="M6 6L5 3H2"/>
+        </svg>
+        <p style="margin-top:16px;">Your cart is currently empty.</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <button class="btn btn-primary" style="width:100%;" onclick="alert('Stripe checkout integration coming soon!')">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div id="search-modal" style="position:fixed;inset:0;background:var(--color-bg-alpha);backdrop-filter:blur(10px);z-index:1003;display:none;flex-direction:column;align-items:center;padding-top:120px;">
+    <div style="width:100%;max-width:600px;padding:0 24px;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+        <input id="search-input" type="search" placeholder="Search..." 
+               style="flex:1;padding:16px 20px;border:2px solid var(--color-brand);border-radius:var(--radius);font-family:var(--font-body);font-size:18px;background:transparent;">
+        <button id="search-close" class="header-icon" aria-label="Close search" style="width:48px;height:48px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div id="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Toast Order Button -->
+  <a href="https://www.toasttab.com/hamburg-brewing-company/v3" target="_blank" rel="noopener" class="toast-order">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M6 6h15l-1.5 9h-12z"/>
+      <circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/>
+      <path d="M6 6L5 3H2"/>
+    </svg>
+    Order Food
+  </a>
 
   <script src="js/main.js"></script>
 </body>

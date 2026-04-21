@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donations – Hamburg Brewing Company</title>
-  <meta name="description" content="Request a donation from Hamburg Brewing Company.">
+  <title>Book Your Event – Hamburg Brewing Company</title>
+  <meta name="description" content="Host your event at Hamburg Brewing Company. Weddings, corporate parties, holiday gatherings, and more.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -74,80 +74,69 @@
   <main>
     <section class="page-header">
       <div class="container">
-        <h1>Donations</h1>
+        <h1>Book Your Event</h1>
       </div>
     </section>
 
     <section class="content-section">
       <div class="container">
         <div class="content-body">
-          <h2>Donation Request</h2>
-          <p>Please note the following before requesting donations.</p>
+          <h2>Host your event at Hamburg!</h2>
+          <p>If you're looking for a location for your next corporate party, holiday gathering or even a wedding, check out what we have to offer:</p>
 
-          <h3>Mandatory Criteria</h3>
-          <p>Must be described as one of the following:</p>
           <ul>
-            <li>An organization holding a current tax-exempt status under Section 501(c)(3), (4), (6) or (19) of the Internal Revenue Code.</li>
-            <li>A recognized government entity: state, county, or city agency, including law enforcement or fire departments, that are requesting goods exclusively for public purposes.</li>
+            <li>Seasonal Taproom Menu</li>
+            <li>Weekly Taproom &amp; Brunch Specials</li>
+            <li>Innovative Banquet Menus and Action Stations for Small Parties and Weddings</li>
+            <li>Heated Tent, Open Year Round</li>
+            <li>Event Space for 20-200 people</li>
+            <li>Custom Beer Bar &amp; Full Liquor Packages</li>
           </ul>
-          <p><em>Due to the nature of our products, we cannot donate to any school-related events or organizations.</em></p>
 
-          <h3>Selection Process</h3>
-          <ul>
-            <li>We will review and make initial funding decisions on all requests submitted 30 days prior to the required donation date.</li>
-            <li>Applications are typically reviewed within 14 days of the submission date. Organizations will be notified of decisions via email or phone. All funding decisions are final.</li>
-            <li>Upon approval, donations may be picked up at our taproom during operating hours.</li>
-          </ul>
-          <p>Due to a high frequency of donation requests, we can only make contributions to a select amount of request submissions.</p>
+          <p>Please fill out the form below and someone will be in contact with you soon!</p>
 
-          <h3>Make an Official Donation Request</h3>
-          <p>Please fill out the form below. Requests will be reviewed within 2–3 weeks and the contact person will be notified on approval.</p>
-
-          <form class="contact-form" action="mailto:info@hamburgbrewing.com?subject=Donation Request" method="post" enctype="text/plain">
+          <form class="contact-form" action="mailto:info@hamburgbrewing.com?subject=Event Booking Request" method="post" enctype="text/plain">
             <div class="form-row">
               <div class="form-group">
-                <label for="org-name">Organization Name *</label>
-                <input type="text" id="org-name" name="Organization Name" required>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="Name" required>
               </div>
               <div class="form-group">
-                <label for="tax-id">Tax ID Number *</label>
-                <input type="text" id="tax-id" name="Tax ID" required>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="Email" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="contact-name">Contact Name *</label>
-                <input type="text" id="contact-name" name="Contact Name" required>
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="Phone" required>
               </div>
               <div class="form-group">
-                <label for="contact-email">Contact Email *</label>
-                <input type="email" id="contact-email" name="Contact Email" required>
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="Preferred Date" required>
               </div>
             </div>
             <div class="form-group">
-              <label for="contact-phone">Contact Phone</label>
-              <input type="tel" id="contact-phone" name="Contact Phone">
-            </div>
-            <div class="form-group">
-              <label for="event-date">Event Date *</label>
-              <input type="date" id="event-date" name="Event Date" required>
-            </div>
-            <div class="form-group">
-              <label for="donation-type">Type of Donation Requested *</label>
-              <select id="donation-type" name="Donation Type" required>
+              <label for="event-type">Event Type *</label>
+              <select id="event-type" name="Event Type" required>
                 <option value="">Select one...</option>
-                <option value="Beer/Wine">Beer / Wine</option>
-                <option value="Gift Card">Gift Card</option>
-                <option value="Merchandise">Merchandise</option>
-                <option value="Event Space">Event Space</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Corporate Party">Corporate Party</option>
+                <option value="Holiday Gathering">Holiday Gathering</option>
+                <option value="Birthday Party">Birthday Party</option>
+                <option value="Rehearsal Dinner">Rehearsal Dinner</option>
                 <option value="Other">Other</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="message">Tell us about your organization and event *</label>
-              <textarea id="message" name="Message" rows="5" required></textarea>
+              <label for="guests">Approximate Guest Count *</label>
+              <input type="number" id="guests" name="Guest Count" min="1" required>
             </div>
-            <button type="submit" class="btn btn-primary">Submit Donation Request</button>
+            <div class="form-group">
+              <label for="details">Tell us about your event</label>
+              <textarea id="details" name="Details" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
           </form>
         </div>
       </div>

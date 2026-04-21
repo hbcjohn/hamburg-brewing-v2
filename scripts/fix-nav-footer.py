@@ -1,35 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu – Hamburg Brewing Company</title>
-  <meta name="description" content="View our taproom menu, food menu, brunch menu, and more at Hamburg Brewing Company.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+#!/usr/bin/env python3
+"""Fix all Hamburg Brewing pages - standardize nav and footer"""
+import os, re
 
-  <!-- Age Gate -->
-  <div id="age-gate" class="age-gate-overlay">
-    <div class="age-gate-modal">
-      <h2>Are You 21 or Older?</h2>
-      <div class="age-gate-divider"></div>
-      <p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>
-      <div class="age-gate-buttons">
-        <button class="btn btn-primary" onclick="ageGate.verify()">Yes</button>
-        <button class="btn btn-secondary" onclick="ageGate.deny()">No</button>
-      </div>
-    </div>
-  </div>
+BASE = "/home/walt/.openclaw/workspace/projects/hamburg-brewing"
 
-  <div id="nav-overlay" class="nav-overlay"></div>
+# Read template
+with open(f"{BASE}/.template.html") as f:
+    TEMPLATE = f.read()
 
-  <nav id="main-nav" class="main-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
+# Standard nav HTML
+NAV_HTML = """      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="book-your-event.html">Book Your Event</a></li>
       <li><a href="menu.html">Taproom Menu</a></li>
@@ -46,78 +26,10 @@
       <li><a href="branding.html">Branding</a></li>
       <li><a href="holiday-parties.html">Holiday Parties</a></li>
       <li><a href="https://order.toasttab.com/online/hamburgbrewing" target="_blank" rel="noopener">Take Out</a></li>
-      <li><a href="https://www.toasttab.com/catering/hamburgbrewing/" target="_blank" rel="noopener">Large Party + Catering</a></li>
-    </ul>
-  </nav>
+      <li><a href="https://www.toasttab.com/catering/hamburgbrewing/" target="_blank" rel="noopener">Large Party + Catering</a></li>"""
 
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="header-left">
-        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <a href="index.html" class="logo">
-        <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co" loading="eager">
-      </a>
-      <div class="header-right">
-        <button id="search-toggle" class="header-icon" aria-label="Search">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        </button>
-        <button id="cart-toggle" class="header-icon" aria-label="Cart">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
-          <span id="cart-count" class="cart-count" style="display:none">0</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-header">
-      <div class="container">
-        <h1>Menu</h1>
-      </div>
-    </section>
-
-    <section class="menu-grid-section">
-      <div class="container">
-        <div class="menu-grid">
-          <a href="menu-new-taproom.html" class="menu-card">
-            <div class="menu-card-image">
-              <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/NewTaproomMenuButtonV2_480x480.jpg?v=1729180193" alt="New Taproom Menu" loading="lazy">
-            </div>
-            <div class="menu-card-label">New Taproom Menu</div>
-          </a>
-          <a href="menu-old-taproom.html" class="menu-card">
-            <div class="menu-card-image">
-              <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/OldTaproomMenuButtonV2_480x480.jpg?v=1729180193" alt="Old Taproom Menu" loading="lazy">
-            </div>
-            <div class="menu-card-label">Old Taproom Menu</div>
-          </a>
-          <a href="menu-food.html" class="menu-card">
-            <div class="menu-card-image">
-              <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/FoodMenuButtonV2_480x480.jpg?v=1729180193" alt="Food Menu" loading="lazy">
-            </div>
-            <div class="menu-card-label">Food Menu</div>
-          </a>
-          <a href="menu-brunch.html" class="menu-card">
-            <div class="menu-card-image">
-              <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/BrunchMenuButtonV2_480x480.jpg?v=1729180193" alt="Brunch Menu" loading="lazy">
-            </div>
-            <div class="menu-card-label">Brunch Menu</div>
-          </a>
-          <a href="https://order.toasttab.com/online/hamburgbrewing" target="_blank" rel="noopener" class="menu-card">
-            <div class="menu-card-image">
-              <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/TakeoutMenuButtonV2_480x480.jpg?v=1729180193" alt="Takeout" loading="lazy">
-            </div>
-            <div class="menu-card-label">Takeout</div>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-    <footer class="site-footer">
+# Standard footer HTML
+FOOTER_HTML = """  <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
@@ -165,8 +77,34 @@
         <p>© 2026 Hamburg Brewing Company. All rights reserved.</p>
       </div>
     </div>
-  </footer>
+  </footer>"""
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+# Find all HTML files
+for fname in os.listdir(BASE):
+    if not fname.endswith('.html') or fname.startswith('.'):
+        continue
+    fpath = os.path.join(BASE, fname)
+    with open(fpath) as f:
+        content = f.read()
+    
+    # Replace nav section
+    nav_start = content.find('<nav id="main-nav"')
+    nav_end = content.find('</nav>') + len('</nav>')
+    if nav_start >= 0:
+        old_nav = content[nav_start:nav_end]
+        content = content.replace(old_nav, f'<nav id="main-nav" class="main-nav">\n    <ul>\n{NAV_HTML}\n    </ul>\n  </nav>')
+    
+    # Replace footer section
+    footer_start = content.find('<footer class="site-footer"')
+    if footer_start >= 0:
+        # Find where footer ends (before closing </body> or before cart/search overlays)
+        remaining = content[footer_start:]
+        footer_end_rel = remaining.find('  </footer>') + len('  </footer>')
+        old_footer = content[footer_start:footer_start+footer_end_rel]
+        content = content.replace(old_footer, FOOTER_HTML)
+    
+    with open(fpath, 'w') as f:
+        f.write(content)
+    print(f"Updated {fname}")
+
+print("\nDone! All pages standardized.")
