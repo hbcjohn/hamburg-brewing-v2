@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus &amp; Limo Policy – Hamburg Brewing Company</title>
+  <meta name="description" content="Bus and limousine policy for Hamburg Brewing Company taproom visits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="age-gate" class="age-gate-overlay">
+    <div class="age-gate-modal">
+      <h2>Are You 21 or Older?</h2>
+      <div class="age-gate-divider"></div>
+      <p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>
+      <div class="age-gate-buttons">
+        <button class="btn btn-primary" onclick="ageGate.verify()">Yes</button>
+        <button class="btn btn-secondary" onclick="ageGate.deny()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <nav id="main-nav" class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Taproom Menu</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="join-team.html">Join Our Team</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="bus-policy.html">Bus &amp; Limo Policy</a></li>
+      <li><a href="new-account.html">New Account Inquiry</a></li>
+    </ul>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co" loading="eager">
+      </a>
+      <div class="header-right">
+        <button id="search-toggle" class="header-icon" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button id="cart-toggle" class="header-icon" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span id="cart-count" class="cart-count" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Bus &amp; Limo Policy</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="content-body">
+          <p>We appreciate your interest in visiting Hamburg Brewing Company in a responsible manner. We are committed to ensuring all of our guests have a memorable and safe experience during their visit to the Tap Room. In order to best accommodate all guests, we have some guidelines for guests visiting us on hired passenger carriers. These rules apply specifically to tour buses and limousines (not taxis or rideshare services). Please take a moment to familiarize yourself with the following information:</p>
+
+          <ul>
+            <li>All parties arriving on a hired passenger carrier like a tour bus or limousine must <strong>register in advance</strong> by submitting the form below at least 24 hours before arrival. Please note that any unregistered or same day groups will be allowed at the discretion of management.</li>
+            <li>Registration of your bus or limo is <strong>not a reservation</strong> for a tour, tasting, dining or a guaranteed space. Seating for tables and at the bars in the Tap Room is first come, first served.</li>
+            <li>If you plan to visit multiple breweries on the day of your visit, we recommend that Hamburg Brewing Company be an <strong>early stop</strong> on your itinerary. Intoxicated guests will not be admitted into the Tap Room, regardless of registration.</li>
+            <li>Everyone wishing to purchase alcohol must be at least 21 years old or older and have a <strong>valid form of photo identification</strong>. Acceptable IDs include: U.S. driver's license, military ID, U.S. ID card, or U.S. Passport. Unacceptable forms of ID include: expired, altered, out-of-country, or paper forms of identification.</li>
+            <li><strong>No outside beverages or food</strong> of any kind are allowed. This includes packaged food and coolers.</li>
+            <li>Please act <strong>respectfully</strong> when you arrive at our Tap Room. Anyone creating a nuisance may be asked to leave.</li>
+            <li>If we observe any individual demonstrating obvious signs of intoxication while in the Tap Room, they will be <strong>denied service of alcohol</strong> for the remainder of the day. If a separate individual provides alcohol to the intoxicated individual, the alcoholic beverage will be disposed of and may result in all involved parties being asked to leave the Tap Room.</li>
+          </ul>
+
+          <h2>Register Your Group</h2>
+          <form class="contact-form" action="mailto:info@hamburgbrewing.com?subject=Bus/Limo Registration" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="group-name">Group / Company Name *</label>
+                <input type="text" id="group-name" name="Group Name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-name">Contact Name *</label>
+                <input type="text" id="contact-name" name="Contact Name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email">Contact Email *</label>
+                <input type="email" id="contact-email" name="Contact Email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Contact Phone *</label>
+                <input type="tel" id="contact-phone" name="Contact Phone" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="arrival-date">Arrival Date *</label>
+                <input type="date" id="arrival-date" name="Arrival Date" required>
+              </div>
+              <div class="form-group">
+                <label for="arrival-time">Estimated Arrival Time *</label>
+                <input type="time" id="arrival-time" name="Arrival Time" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="group-size">Approximate Group Size *</label>
+              <input type="number" id="group-size" name="Group Size" min="1" required>
+            </div>
+            <div class="form-group">
+              <label for="vehicle-type">Vehicle Type *</label>
+              <select id="vehicle-type" name="Vehicle Type" required>
+                <option value="">Select one...</option>
+                <option value="Tour Bus">Tour Bus</option>
+                <option value="Limo">Limo</option>
+                <option value="Party Bus">Party Bus</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="Notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Register Group</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <p>6553 Boston State Rd<br>Hamburg, NY 14075</p>
+          <p><a href="tel:7166493249">(716) 649-3249</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon–Thu: 11:30 AM – 10 PM<br>Fri–Sat: 11:30 AM – 11 PM<br>Sun: 10 AM – 9 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/hamburgbrewingcompany" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com/hamburgbrewing" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://twitter.com/HamburgBrewing" target="_blank" rel="noopener" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Must be 21 or older to consume alcohol. Please drink responsibly.</p>
+        <p>© <span id="year"></span> Hamburg Brewing Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
