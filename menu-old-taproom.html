@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old Taproom Menu – Hamburg Brewing Company</title>
+  <meta name="description" content="Previous taproom menu at Hamburg Brewing Company.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="age-gate" class="age-gate-overlay">
+    <div class="age-gate-modal">
+      <h2>Are You 21 or Older?</h2>
+      <div class="age-gate-divider"></div>
+      <p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>
+      <div class="age-gate-buttons">
+        <button class="btn btn-primary" onclick="ageGate.verify()">Yes</button>
+        <button class="btn btn-secondary" onclick="ageGate.deny()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <nav id="main-nav" class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Taproom Menu</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="join-team.html">Join Our Team</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="bus-policy.html">Bus &amp; Limo Policy</a></li>
+      <li><a href="new-account.html">New Account Inquiry</a></li>
+    </ul>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co" loading="eager">
+      </a>
+      <div class="header-right">
+        <button id="search-toggle" class="header-icon" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button id="cart-toggle" class="header-icon" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span id="cart-count" class="cart-count" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Old Taproom Menu</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="content-body">
+          <p style="margin-bottom: 24px;"><a href="menu.html" style="color: var(--color-brand-dark); text-decoration: none;">← Back to Menus</a></p>
+
+          <p class="menu-note"><em>*Prices do not include tax</em></p>
+
+          <div class="menu-category">
+            <h2>Beer</h2>
+            <div class="menu-subcategory">
+              <h3>On Tap</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">LIL GUY – Session IPA</span><span class="item-desc">4.5% ABV</span><span class="item-price">12oz / $6.00 &nbsp; 16oz / $7.00</span></div>
+                <div class="menu-item"><span class="item-name">LOUIE IPA – India Pale Ale</span><span class="item-desc">6.9% ABV</span><span class="item-price">12oz / $7.00 &nbsp; 16oz / $8.00</span></div>
+                <div class="menu-item"><span class="item-name">BIG LOU – Double IPA</span><span class="item-desc">9.0% ABV</span><span class="item-price">12oz / $8.00</span></div>
+                <div class="menu-item"><span class="item-name">LAKE VIEW LAGER – Lager</span><span class="item-desc">5.2% ABV</span><span class="item-price">12oz / $6.00 &nbsp; 16oz / $7.00</span></div>
+                <div class="menu-item"><span class="item-name">PONDVIEW PILSNER – Pilsner</span><span class="item-desc">4.5% ABV</span><span class="item-price">12oz / $6.00 &nbsp; 16oz / $7.00</span></div>
+                <div class="menu-item"><span class="item-name">IRISH RED – Irish Style Red Ale</span><span class="item-desc">4.8% ABV</span><span class="item-price">12oz / $6.00 &nbsp; 16oz / $7.00</span></div>
+                <div class="menu-item"><span class="item-name">BERRY SNEAKY – Berry Fruited Sour Ale</span><span class="item-desc">7.2% ABV • Contains lactose</span><span class="item-price">12oz / $8.00</span></div>
+              </div>
+            </div>
+
+            <div class="menu-subcategory">
+              <h3>— Flying Bison —</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">RUSTY CHAIN – Vienna-Style Lager</span><span class="item-desc">5.25% ABV</span><span class="item-price">12oz / $5.00 &nbsp; 16oz / $6.00</span></div>
+                <div class="menu-item"><span class="item-name">BUFFALO LAGER – Premium Lager</span><span class="item-desc">4.8% ABV</span><span class="item-price">12oz / $5.00 &nbsp; 16oz / $6.00</span></div>
+                <div class="menu-item"><span class="item-name">THE HERC C-130 – Barleywine</span><span class="item-desc">9.5% ABV</span><span class="item-price">12oz / $8.00</span></div>
+              </div>
+            </div>
+
+            <div class="menu-subcategory">
+              <h3>Hard Cider <span class="badge">Gluten Free</span></h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">BLUEBERRY PEACH HARD CIDER – Semi-Sweet</span><span class="item-desc">6.0% ABV • Gluten Free</span><span class="item-price">12oz / $7.50</span></div>
+                <div class="menu-item"><span class="item-name">POMEGRANATE HARD CIDER – Semi-Sweet</span><span class="item-desc">6.0% ABV • Gluten Free</span><span class="item-price">12oz / $7.50</span></div>
+                <div class="menu-item"><span class="item-name">PEAR HARD CIDER – Semi-Sweet</span><span class="item-desc">6.0% ABV • Gluten Free</span><span class="item-price">12oz / $7.50</span></div>
+                <div class="menu-item"><span class="item-name">BLACKBERRY LEMON HARD CIDER – Semi-Sweet</span><span class="item-desc">6.0% ABV • Gluten Free</span><span class="item-price">12oz / $7.50</span></div>
+              </div>
+            </div>
+
+            <div class="menu-subcategory">
+              <h3>Non-Alcoholic</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Non-Alcoholic Beer</span><span class="item-desc">Please ask bartender</span><span class="item-price">12oz Can / $5.00</span></div>
+                <div class="menu-item"><span class="item-name">Beer Flights</span><span class="item-desc">Choose 4 beers</span><span class="item-price">$10.00</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Wine</h2>
+            <div class="menu-subcategory">
+              <h3>White</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">21 Brix – Riesling, NY State</span><span class="item-price">$10 / $34</span></div>
+                <div class="menu-item"><span class="item-name">Chateau d'Esclans The Beach – Rose, France</span><span class="item-price">$10 / $34</span></div>
+                <div class="menu-item"><span class="item-name">Capolsado – Moscato, Italy</span><span class="item-price">$10 / $36</span></div>
+                <div class="menu-item"><span class="item-name">Santa Marina – Pinot Grigio, Italy</span><span class="item-price">$11 / $38</span></div>
+                <div class="menu-item"><span class="item-name">Alexander Valley – Chardonnay, California</span><span class="item-price">$12 / $40</span></div>
+                <div class="menu-item"><span class="item-name">Infamous Goose – Sauvignon Blanc, New Zealand</span><span class="item-price">$12 / $40</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Red</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Reif Estate – Cabernet Sauvignon, Niagara on the Lake, ON</span><span class="item-price">$10 / $34</span></div>
+                <div class="menu-item"><span class="item-name">1000 Stories – Pinot Noir, California</span><span class="item-price">$12 / $40</span></div>
+                <div class="menu-item"><span class="item-name">BR Cohn – Cabernet, California</span><span class="item-price">$13 / $44</span></div>
+                <div class="menu-item"><span class="item-name">La Marca – Prosecco, Italy</span><span class="item-price">- / $42</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Liquor &amp; Cocktails</h2>
+            <div class="menu-subcategory">
+              <h3>Vodka</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Reyka</span><span class="item-price">$8</span></div>
+                <div class="menu-item"><span class="item-name">Tito's</span><span class="item-price">$10</span></div>
+                <div class="menu-item"><span class="item-name">Kettle One</span><span class="item-price">$11</span></div>
+                <div class="menu-item"><span class="item-name">Deep Eddy Lemon</span><span class="item-price">$8</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Gin</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Hendricks</span><span class="item-price">$10</span></div>
+                <div class="menu-item"><span class="item-name">New Amsterdam</span><span class="item-price">$8</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Whiskey</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Three Chord</span><span class="item-price">$8</span></div>
+                <div class="menu-item"><span class="item-name">Jameson</span><span class="item-price">$10</span></div>
+                <div class="menu-item"><span class="item-name">Crown Royal</span><span class="item-price">$10</span></div>
+                <div class="menu-item"><span class="item-name">Jack Daniels</span><span class="item-price">$8</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Rum</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Flor de Cana</span><span class="item-price">$8</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Spiced Rum</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Sailor Jerry</span><span class="item-price">$8</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Rye</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Noble Oak</span><span class="item-price">$10</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Bourbon</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Woodford Reserve</span><span class="item-price">$13</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Tequila</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Casamigos</span><span class="item-price">$10</span></div>
+                <div class="menu-item"><span class="item-name">Milagro</span><span class="item-price">$8</span></div>
+              </div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>High Noon</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Peach</span><span class="item-price">$7</span></div>
+                <div class="menu-item"><span class="item-name">Pineapple</span><span class="item-price">$7</span></div>
+                <div class="menu-item"><span class="item-name">Black Cherry</span><span class="item-price">$7</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Cocktails</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Manhattan</span><span class="item-desc">Whiskey, Rye or Bourbon, Sweet Vermouth, Orange Bitters, Luxaroo Cherry</span><span class="item-price">$12</span></div>
+              <div class="menu-item"><span class="item-name">Old Fashion</span><span class="item-desc">Bourbon or Rye, Maraschino Cherry, Simple Syrup, Orange Bitters</span><span class="item-price">$12</span></div>
+              <div class="menu-item"><span class="item-name">Margarita</span><span class="item-desc">Tequila, Cointreau, Lime Juice</span><span class="item-price">$10</span></div>
+              <div class="menu-item"><span class="item-name">Classic Martini</span><span class="item-desc">Vodka or Gin, Dry Vermouth</span><span class="item-price">$11</span></div>
+              <div class="menu-item"><span class="item-name">Summer Drink</span><span class="item-desc">Reyka Orange, Club Soda, Cranberry</span><span class="item-price">$10</span></div>
+              <div class="menu-item"><span class="item-name">Cosmopolitan</span><span class="item-desc">Vodka, Cranberry, Cointreau, Lime Juice</span><span class="item-price">$11</span></div>
+              <div class="menu-item"><span class="item-name">Paloma</span><span class="item-desc">Tequila, Grapefruit, Soda</span><span class="item-price">$10</span></div>
+              <div class="menu-item"><span class="item-name">Mule</span><span class="item-desc">Vodka, Ginger Beer, Lime Juice</span><span class="item-price">$10</span></div>
+              <div class="menu-item"><span class="item-name">Pina Colada</span><span class="item-desc">Malibu Coconut Rum, Coconut Syrup, Pineapple Juice</span><span class="item-price">$12</span></div>
+              <div class="menu-item"><span class="item-name">Rum Punch</span><span class="item-desc">Sailor Jerry, Pineapple Juice, Orange Juice, Lime Juice, Grenadine, Strawberry Syrup</span><span class="item-price">$13</span></div>
+              <div class="menu-item"><span class="item-name">Vodka Root Beer</span><span class="item-desc">Stoli Vanilla Vodka, Bevonda Root Beer, topped with Whipped Cream and Cherry</span><span class="item-price">$11</span></div>
+              <div class="menu-item"><span class="item-name">Transfusion</span><span class="item-desc">Reyka Vodka, Grape Juice, Lime Juice, Bevonda Ginger Beer</span><span class="item-price">$12</span></div>
+              <div class="menu-item"><span class="item-name">Mojito</span><span class="item-desc">Flor de Cana Rum, Fresh Mint, Lime Juice, Simple Syrup, Club Soda</span><span class="item-price">$10</span></div>
+              <div class="menu-item"><span class="item-name">Negroni</span><span class="item-desc">Campari, New Amsterdam Gin, Sweet Red Vermouth, Orange Peel</span><span class="item-price">$13</span></div>
+              <div class="menu-item"><span class="item-name">Hugo Spritz</span><span class="item-desc">St. Germain, Fresh Mint, Prosecco, Lime</span><span class="item-price">$11</span></div>
+              <div class="menu-item"><span class="item-name">Southtown Shirley</span><span class="item-desc">Deep Eddy Lemon Vodka, Pomegranate Hard Cider, Bevonda Shirley Temple</span><span class="item-price">$12</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Mocktails</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Nojito</span><span class="item-desc">Fresh Mint, Lime Juice, Simple Syrup, Club Soda</span><span class="item-price">$7</span></div>
+              <div class="menu-item"><span class="item-name">NoPaloma</span><span class="item-desc">Grapefruit Juice, Club Soda, Lime</span><span class="item-price">$7</span></div>
+              <div class="menu-item"><span class="item-name">NA Punch</span><span class="item-desc">Pineapple Juice, Orange Juice, Lime Juice, Grenadine, Strawberry Syrup</span><span class="item-price">$7</span></div>
+              <div class="menu-item"><span class="item-name">Bevondarita</span><span class="item-desc">Blood Orange, Ginger Beer, Lime Juice, Lemon Juice</span><span class="item-price">$7</span></div>
+              <div class="menu-item"><span class="item-name">NA Transfusion</span><span class="item-desc">Grape Juice, Lime Juice, Bevonda Ginger Beer</span><span class="item-price">$7</span></div>
+              <div class="menu-item"><span class="item-name">Lemonade</span><span class="item-desc">With Strawberry, Raspberry, Lavender, or Peach Flavoring</span><span class="item-price">$5</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <p>6553 Boston State Rd<br>Hamburg, NY 14075</p>
+          <p><a href="tel:7166493249">(716) 649-3249</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon–Thu: 11:30 AM – 10 PM<br>Fri–Sat: 11:30 AM – 11 PM<br>Sun: 10 AM – 9 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/hamburgbrewingcompany" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com/hamburgbrewing" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://twitter.com/HamburgBrewing" target="_blank" rel="noopener" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Must be 21 or older to consume alcohol. Please drink responsibly.</p>
+        <p>© <span id="year"></span> Hamburg Brewing Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu – Hamburg Brewing Company</title>
+  <meta name="description" content="Food menu at Hamburg Brewing Company. Snacks, salads, entrees, pizza, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="age-gate" class="age-gate-overlay">
+    <div class="age-gate-modal">
+      <h2>Are You 21 or Older?</h2>
+      <div class="age-gate-divider"></div>
+      <p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>
+      <div class="age-gate-buttons">
+        <button class="btn btn-primary" onclick="ageGate.verify()">Yes</button>
+        <button class="btn btn-secondary" onclick="ageGate.deny()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <nav id="main-nav" class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Taproom Menu</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="join-team.html">Join Our Team</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="bus-policy.html">Bus &amp; Limo Policy</a></li>
+      <li><a href="new-account.html">New Account Inquiry</a></li>
+    </ul>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co" loading="eager">
+      </a>
+      <div class="header-right">
+        <button id="search-toggle" class="header-icon" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button id="cart-toggle" class="header-icon" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span id="cart-count" class="cart-count" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Food</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="content-body">
+          <p style="margin-bottom: 24px;"><a href="menu.html" style="color: var(--color-brand-dark); text-decoration: none;">← Back to Menus</a></p>
+
+          <p class="menu-note"><em>*If you have a food allergy, please notify us. For your (dietary) information, we use beef tallow in our fryers. All sandwiches can be made with gluten free bread.</em></p>
+
+          <div class="menu-category">
+            <h2>Snacks + Sides</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Baked Pretzel Sticks</span><span class="item-desc">With Caraway Beer Mustard & Sriracha Aioli — Add Lake View Lager Beer Cheese +$1</span><span class="item-price">$9.75</span></div>
+              <div class="menu-item"><span class="item-name">Tortilla Chips with House Salsa</span><span class="item-price">$9.00</span></div>
+              <div class="menu-item"><span class="item-name">Tortilla Chips with Chicken Wing Dip</span><span class="item-price">$10.25</span></div>
+              <div class="menu-item"><span class="item-name">Tortilla Chips with Guacamole</span><span class="item-price">$10.75</span></div>
+              <div class="menu-item"><span class="item-name">Tortilla Chips with Street Corn Dip</span><span class="item-price">$10.75</span></div>
+              <div class="menu-item"><span class="item-name">Charcuterie Board</span><span class="item-desc">Rotating Assortment of Cheese, Cured Meat, Complementing Spreads and Mini Naan Breads. Details Available at the Bar.</span><span class="item-price">$16.99</span></div>
+              <div class="menu-item"><span class="item-name">French Fries</span><span class="item-desc">Truffle Parm +$1</span><span class="item-price">$7.99</span></div>
+              <div class="menu-item"><span class="item-name">French Onion Soup</span><span class="item-desc">Caramelized Onions, Croutons, Broiled Provolone, Swiss</span><span class="item-price">$9.99</span></div>
+              <div class="menu-item"><span class="item-name">Sweet Potato Fries</span><span class="item-desc">Served with Honey</span><span class="item-price">$10.99</span></div>
+              <div class="menu-item"><span class="item-name">Honey Goat Cheese Fritters</span><span class="item-desc">Goat Cheese Filled Phyllo Dough with Balsamic Glaze, Served with Fig Jam</span><span class="item-price">$15.99</span></div>
+              <div class="menu-item"><span class="item-name">Chicken Fingers with Fries</span><span class="item-price">$13.99</span></div>
+              <div class="menu-item"><span class="item-name">Totchos</span><span class="item-desc">Tater Tots, Tortilla Chips, Beer Cheese, Pico, Black Beans, Jalapenos, Pickled Red Onion, Lime Sour — Add Chicken +$5</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Kung Pao Cauliflower</span><span class="item-desc">Battered Cauliflower, Sweet and Spicy Sauce, Sesame Seeds, Clover Sprouts</span><span class="item-price">$14.99</span></div>
+              <div class="menu-item"><span class="item-name">Chicken Teriyaki Potstickers</span><span class="item-desc">Fried and Served With Sweet Chili Sauce</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Wings (10 pc)</span><span class="item-desc">Hot • Medium • Mild • Carolina BBQ • Chipotle Lime Dry-Rub • Buffalo • Lemon Pepper Dry-Rub • General Tso • Mango Habanero • Garlic Parm • Spicy Honey</span><span class="item-price">$15.99</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Salads</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Classic Caesar Salad</span><span class="item-desc">House Dressing, Croutons, Parmigiano-Reggiano (anchovies upon request)</span><span class="item-price">$12.99</span></div>
+              <div class="menu-item"><span class="item-name">Souvlaki Salad</span><span class="item-desc">Mixed Greens, Feta, Kalamata Olives, Cherry Tomatoes, Peperoncini, Pita, Locally Made Greek Goddess Dressing and Dill Sauce</span><span class="item-price">$12.99</span></div>
+              <div class="menu-item"><span class="item-name">Wedge Salad</span><span class="item-desc">Iceberg Lettuce, Buttermilk Dressing, Crumbled Blue Cheese, Bacon Bits, Hard Boiled Egg, Tomato</span><span class="item-price">$11.99</span></div>
+            </div>
+            <p style="margin-top: 16px; font-size: 14px; color: var(--color-text-light);"><strong>Add a Protein:</strong> Cajun Shrimp / Harpoon +$8 • Grilled Chicken +$5 • Salmon +$10 • Grilled Halibut +$11</p>
+          </div>
+
+          <div class="menu-category">
+            <h2>Entrees</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Mac N Cheese</span><span class="item-desc">Cavatappi Tossed in Lake View Lager Beer Cheese, Cheeto Dust Topping — Add Grilled Chicken +$5, Bacon and BBQ +$2</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Street Corn Breaded Shrimp Tacos</span><span class="item-desc">Street Corn Breaded Shrimp, Corn and Black Bean Salsa, Lime Crema, Cotija</span><span class="item-price">$14.99</span></div>
+              <div class="menu-item"><span class="item-name">Salmon and Rice Bowl</span><span class="item-desc">Quinoa and Rice Blend, Grilled Salmon, Red Cabbage, Cherry Tomatoes, Carrot, Guac, Watercress, Sriracha Aioli</span><span class="item-price">$16.99</span></div>
+              <div class="menu-item"><span class="item-name">Chicken Taquitos</span><span class="item-desc">Hatch Chile Chicken Taquitos, Beer Cheese, Pico, Pickled Red Onion, Poblano Ranch</span><span class="item-price">$17.49</span></div>
+              <div class="menu-item"><span class="item-name">French Dip Quesadilla</span><span class="item-desc">Pulled Short Rib, Jack Cheese, Lime Sour, Pickled Onions, Cotija Cheese, French Onion Jus</span><span class="item-price">$18.99</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Hand Helds <span style="font-size: 13px; font-weight: 400; color: var(--color-text-light);">— Add Fries +$2 or House Salad +$3</span></h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Caprese Sandwich</span><span class="item-desc">Tomatoes, Mozzarella, Basil Pesto, Balsamic Reduction, Toasted Baguette</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Southwest Chicken Wrap</span><span class="item-desc">Grilled Chicken Breast, Avocado, Roasted Corn and Black Bean Salsa, Poblano Ranch, Cheese, Lettuce</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Grilled Cheese and Soup</span><span class="item-desc">Brioche, American, Provolone, Roasted Red Pepper and Tomato Bisque</span><span class="item-price">$11.99</span></div>
+              <div class="menu-item"><span class="item-name">Beef On Weck</span><span class="item-desc">Kimmelweck Costanzo Roll, Cucumber Wasabi Aioli, Kettle Chips — Add Lake View Beer Cheese +$1</span><span class="item-price">$13.99</span></div>
+              <div class="menu-item"><span class="item-name">Buffalo Chicken Sandwich</span><span class="item-desc">Breaded Chicken Breast, Franks Hot Sauce, Taproom Bleu Cheese, Lettuce & Tomatoes</span><span class="item-price">$13.99</span></div>
+              <div class="menu-item"><span class="item-name">James' Bruschetta Chicken Sandwich</span><span class="item-desc">Mozzarella, Pesto Mayo, Tomato Bruschetta, Balsamic Glaze & Lettuce</span><span class="item-price">$13.99</span></div>
+              <div class="menu-item"><span class="item-name">Nashville Hot Chicken Sandwich</span><span class="item-desc">Brioche Bun, Breaded Chicken Breast, Nashville Hot Dry Rub, Slaw, Pickles</span><span class="item-price">$14.99</span></div>
+              <div class="menu-item"><span class="item-name">Reuben Sandwich</span><span class="item-desc">Rye, Swiss, Corned Beef, Sauerkraut, 1000 Island</span><span class="item-price">$14.99</span></div>
+              <div class="menu-item"><span class="item-name">Pastrami Melt</span><span class="item-desc">Piled High Pastrami, Sourdough, Swiss, Coleslaw, 1000 Island</span><span class="item-price">$15.99</span></div>
+              <div class="menu-item"><span class="item-name">Steak Hoagie</span><span class="item-desc">Shaved Ribeye, Peppers and Onions, Provolone</span><span class="item-price">$16.99</span></div>
+              <div class="menu-item"><span class="item-name">The Wilson Burger</span><span class="item-desc">Char Grilled Patty, Brioche Bun, Caramelized Onions, Lettuce, Tomato, American Cheese, Secret Sauce — Add Bacon +$3, Fried Egg +$1</span><span class="item-price">$16.99</span></div>
+              <div class="menu-item"><span class="item-name">Grilled Halibut Sandwich</span><span class="item-desc">Brioche Bun, Avocado, Grilled Halibut, Chipotle Aioli, Tomato, Arugula</span><span class="item-price">$16.99</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Pizza</h2>
+            <div class="menu-subcategory">
+              <h3>New York Style – 16"</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Cheese</span><span class="item-price">$19.99</span></div>
+                <div class="menu-item"><span class="item-name">Cheese + 1 Topping</span><span class="item-price">$20.99</span></div>
+                <div class="menu-item"><span class="item-name">Add-Ons (each)</span><span class="item-desc">Pepperoni • Black Olives • Mushrooms • Green Olives • Hot Cherry Peppers • Bacon • Banana Peppers • Bell Peppers • Italian Sausage • Meatballs • Shaved Red Onion • Anchovies</span><span class="item-price">$2.49</span></div>
+              </div>
+              <h3>8" Personal</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Cheese</span><span class="item-price">$10.75</span></div>
+                <div class="menu-item"><span class="item-name">Add-Ons (each)</span><span class="item-price">$.99</span></div>
+              </div>
+              <h3>Specialty Pizzas – 16" / 8"</h3>
+              <div class="menu-items">
+                <div class="menu-item"><span class="item-name">Margarita</span><span class="item-desc">Italian Tomatoes, Fresh Mozzarella & Basil</span><span class="item-price">$20.99 / $10.49</span></div>
+                <div class="menu-item"><span class="item-name">Buffalo Chicken</span><span class="item-desc">Blue Cheese, Franks Hot, Mozzarella & Chopped Chicken Fingers</span><span class="item-price">$27.49 / $12.49</span></div>
+                <div class="menu-item"><span class="item-name">White Pizza</span><span class="item-desc">Mozzarella, Fresh Tomato, Shaved Red Onion, Calabrian Chili</span><span class="item-price">$25.49 / $11.49</span></div>
+                <div class="menu-item"><span class="item-name">Stuffed Banana Pepper</span><span class="item-desc">Sauce and Cheese then Topped with Sliced Sausage, Stuffed Peppers</span><span class="item-price">$27.49 / $12.49</span></div>
+                <div class="menu-item"><span class="item-name">Vodka Sauce Pizza</span><span class="item-desc">Chunky Vodka Sauce, Mozzarella, Crumbled Sausage, Ricotta, Basil</span><span class="item-price">$27.49 / $12.49</span></div>
+                <div class="menu-item"><span class="item-name">Fig Jam & Prosciutto</span><span class="item-desc">Goat Cheese, Mozzarella and Fig Jam, Topped with Balsamic & Seasonal Greens</span><span class="item-price">$28.49 / $13.49</span></div>
+                <div class="menu-item"><span class="item-name">Hot Honey Deluxe</span><span class="item-desc">Detroit Style – Mozzarella, Pepperoni, Basil, Ricotta, Hot Honey</span><span class="item-price">$28.49 / $13.49</span></div>
+                <div class="menu-item"><span class="item-name">Detroit Style</span><span class="item-desc">10"x14" – Mozzarella, Pepperoni, Basil, Ricotta, Hot Honey</span><span class="item-price">$25.49</span></div>
+              </div>
+              <p style="margin-top: 16px; font-size: 14px; color: var(--color-text-light);"><strong>10" Gluten Free Pizza Crust Available</strong> – $11.49 • Add-Ons $.99 • Add Blue Cheese $1.49 • Extra Cheese $2.49</p>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Kids Stuff <span style="font-size: 13px; font-weight: 400; color: var(--color-text-light);">— $7.99 each</span></h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Dino Nuggets</span></div>
+              <div class="menu-item"><span class="item-name">Pizza Logs with Fries and Sauce (4ea)</span></div>
+              <div class="menu-item"><span class="item-name">Mac n Cheez</span></div>
+              <div class="menu-item"><span class="item-name">Hot Dog with Fries</span></div>
+            </div>
+          </div>
+
+          <div class="menu-category">
+            <h2>Dessert</h2>
+            <div class="menu-items">
+              <div class="menu-item"><span class="item-name">Red Velvet Ice Cream Sandwich</span><span class="item-price">$5.99</span></div>
+              <div class="menu-item"><span class="item-name">Vanilla Ice Cream Sandwich</span><span class="item-price">$6.99</span></div>
+              <div class="menu-item"><span class="item-name">Root Beer Float</span><span class="item-desc">Made with Nick Charlaps Ice Cream & Bevonda Craft Soda</span><span class="item-price">$8.99</span></div>
+              <div class="menu-item"><span class="item-name">Chocolate Caramel Sundae</span><span class="item-desc">Add On: Grounded Brownie +$4</span><span class="item-price">$8.99</span></div>
+              <div class="menu-item"><span class="item-name">Hot Honey Peach Cheesecake</span><span class="item-price">$10.49</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <p>6553 Boston State Rd<br>Hamburg, NY 14075</p>
+          <p><a href="tel:7166493249">(716) 649-3249</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon–Thu: 11:30 AM – 10 PM<br>Fri–Sat: 11:30 AM – 11 PM<br>Sun: 10 AM – 9 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/hamburgbrewingcompany" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com/hamburgbrewing" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://twitter.com/HamburgBrewing" target="_blank" rel="noopener" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Must be 21 or older to consume alcohol. Please drink responsibly.</p>
+        <p>© <span id="year"></span> Hamburg Brewing Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
