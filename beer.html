@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beer + Hard Cider – Hamburg Brewing Company</title>
+  <meta name="description" content="Discover Hamburg Brewing Company's craft beers and hard ciders. Available on tap and at local retailers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="age-gate" class="age-gate-overlay">
+    <div class="age-gate-modal">
+      <h2>Are You 21 or Older?</h2>
+      <div class="age-gate-divider"></div>
+      <p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>
+      <div class="age-gate-buttons">
+        <button class="btn btn-primary" onclick="ageGate.verify()">Yes</button>
+        <button class="btn btn-secondary" onclick="ageGate.deny()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav-overlay" class="nav-overlay"></div>
+
+  <nav id="main-nav" class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="book-your-event.html">Book Your Event</a></li>
+      <li><a href="menu.html">Taproom Menu</a></li>
+      <li><a href="beer.html">Beer + Hard Cider</a></li>
+      <li><a href="merch.html">Shop</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="join-team.html">Join Our Team</a></li>
+      <li><a href="donations.html">Donations</a></li>
+      <li><a href="bus-policy.html">Bus &amp; Limo Policy</a></li>
+      <li><a href="new-account.html">New Account Inquiry</a></li>
+      <li><a href="live-music.html">Live Music</a></li>
+      <li><a href="events.html">Upcoming Events</a></li>
+      <li><a href="branding.html">Branding</a></li>
+      <li><a href="holiday-parties.html">Holiday Parties</a></li>
+      <li><a href="https://order.toasttab.com/online/hamburgbrewing" target="_blank" rel="noopener">Take Out</a></li>
+      <li><a href="https://www.toasttab.com/catering/hamburgbrewing/" target="_blank" rel="noopener">Large Party + Catering</a></li>
+    </ul>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/HamburgLogoV2_Gold_x320.png" alt="Hamburg Brewing Co" loading="eager">
+      </a>
+      <div class="header-right">
+        <button id="search-toggle" class="header-icon" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button id="cart-toggle" class="header-icon" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span id="cart-count" class="cart-count" style="display:none">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Beer + Hard Cider</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="content-body">
+          <p>Look for these beers, either on tap at the brewery, or at fine local craft beer retailers.</p>
+
+          <h2>Beer</h2>
+          <div class="beer-grid">
+            <div class="beer-card">
+              <h3>Louie IPA</h3>
+              <p class="beer-style">India Pale Ale</p>
+              <p>This IPA features a soft mouthfeel, hint of bitterness, &amp; a burst of fruity aromas from Mosaic &amp; Amarillo hops.</p>
+              <p class="beer-meta"><strong>6.9% ABV</strong> • Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Lake View Lager</h3>
+              <p class="beer-style">Lager</p>
+              <p>A crisp, refreshing lager created for everyday life.</p>
+              <p class="beer-meta"><strong>5.2% ABV</strong> • Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Berry Sneaky</h3>
+              <p class="beer-style">Fruited Sour Ale</p>
+              <p>This sour is packed with Blackberry, Blueberry, Raspberry, Strawberry and Milk Sugar.</p>
+              <p class="beer-meta"><strong>7.2% ABV</strong> • Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Big Lou</h3>
+              <p class="beer-style">Double India Pale Ale</p>
+              <p>If you're a fan of our Louie IPA, you'll be an even bigger fan of Big Lou! We've doubled down on the flavor, mouthfeel and aroma of our flagship IPA.</p>
+              <p class="beer-meta"><strong>9.0% ABV</strong> • Available in 19.2oz Cans</p>
+            </div>
+            <div class="beer-card">
+              <h3>Irish Red</h3>
+              <p class="beer-style">Irish Style Red Ale</p>
+              <p>A smooth malty ale backed by a good dusting of roasted barley, just like the ones across the pond.</p>
+              <p class="beer-meta"><strong>4.8% ABV</strong> • Seasonally Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Summer Lager</h3>
+              <p class="beer-style">Lager with a Kiss of Lime</p>
+              <p>A simple and easy-drinking beer with a kiss of lime.</p>
+              <p class="beer-meta"><strong>4.2% ABV</strong> • Seasonally Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Oktoberfest</h3>
+              <p class="beer-style">Märzen Lager</p>
+              <p>Big malty flavor from Vienna style malts fade away to a clean bitterness from Perle hops for a full-flavored and balanced experience.</p>
+              <p class="beer-meta"><strong>5.7% ABV</strong> • Seasonally Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Frosty the IPA</h3>
+              <p class="beer-style">India Pale Ale</p>
+              <p>This is no fairytale, our remarkably crushable winter IPA is loaded with bright citrusy Mosaic and Simcoe hops to get you through the cold.</p>
+              <p class="beer-meta"><strong>5.5% ABV</strong> • Seasonally Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Beer Variety Pack</h3>
+              <p class="beer-style">3 IPAs 1 Lager</p>
+              <p>Explore the bold profile of Louie IPA, the classic notes of West Coast IPA, the robust flavors of Big Lou and the refreshing crisp Lake View Lager.</p>
+              <p class="beer-meta"><strong>12oz Can 12-Pack</strong></p>
+            </div>
+            <div class="beer-card">
+              <h3>Lake View Lager 12 Pack</h3>
+              <p class="beer-style">Lager | 5.2% ABV</p>
+              <p>A crisp, refreshing lager created for everyday life.</p>
+              <p class="beer-meta"><strong>12oz Can 12-Pack</strong></p>
+            </div>
+            <div class="beer-card">
+              <h3>Lil Guy 12 Pack</h3>
+              <p class="beer-style">Little IPA | 3.9% ABV</p>
+              <p>That's it, it's go time for fat flavor in a little can with this highly drinkable 3.9% IPA. Ya we caught a niner in there. COMING SOON</p>
+              <p class="beer-meta"><strong>12oz Can 12-Pack</strong></p>
+            </div>
+            <div class="beer-card">
+              <h3>Steel City Red 12 Pack</h3>
+              <p class="beer-style">Red Ale</p>
+              <p>A smooth red ale brewed with roasted barley and the spirit of the Steel City.</p>
+              <p class="beer-meta"><strong>4.8% ABV</strong> • Erie, PA • 12oz Can 12-Pack</p>
+            </div>
+            <div class="beer-card">
+              <h3>Steel City Pils 12 Pack</h3>
+              <p class="beer-style">Pilsner Lager</p>
+              <p>Crafted with a harmonious blend of American malt and European hops, this beer delivers a bright, crisp flavor profile that's both refreshing and invigorating. It's perfect for enjoying no matter the season. Drink with pride.</p>
+              <p class="beer-meta"><strong>4.5% ABV</strong> • Erie, PA • 12oz Can 12-Pack</p>
+            </div>
+          </div>
+
+          <h2 style="margin-top: 48px;">Hard Cider</h2>
+          <div class="beer-grid">
+            <div class="beer-card">
+              <h3>Original Hard Cider</h3>
+              <p class="beer-style">Hard Cider</p>
+              <p>Crisp, clean, and refreshing flavor with just enough sweetness to remind you that it was born from fruit.</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Blueberry Peach Hard Cider</h3>
+              <p class="beer-style">Hard Cider</p>
+              <p>Bursting with juicy notes of blueberries and a bouquet of sweet peach aroma.</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • Available in 12oz 6-Packs &amp; 19.2oz Cans</p>
+            </div>
+            <div class="beer-card">
+              <h3>Nice and Dry Hard Cider</h3>
+              <p class="beer-style">Hard Cider</p>
+              <p>You'll experience a pleasant balance between acidity and sourness with a hidden touch of sweetness.</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Pear Hard Cider</h3>
+              <p class="beer-style">Hard Cider</p>
+              <p>Velvety essence of ripe pears, perfectly blended with the bright, clean taste of orchard-fresh fruit.</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Strawberry Hard Cider</h3>
+              <p class="beer-style">Hard Cider</p>
+              <p>Each sip envelops your senses with the sweet aromatic flavors of ripe strawberries and fresh apples.</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • Seasonally Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Pomegranate Hard Cider</h3>
+              <p class="beer-style">Hard Cider</p>
+              <p>A crisp and refreshing blend of rich sweetness with a subtle tang.</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • Seasonally Available in 12oz 6-Packs</p>
+            </div>
+            <div class="beer-card">
+              <h3>Hard Cider Variety Pack</h3>
+              <p class="beer-style">with Pear Hard Cider</p>
+              <p>We've refreshed this Hard Cider Variety Pack and packed it full of flavor for whatever you are in the mood for. New flavor: Pear Hard Cider!</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz Can 12-Pack</p>
+            </div>
+            <div class="beer-card">
+              <h3>Hard Cider Variety Pack</h3>
+              <p class="beer-style">with Blackberry Lemon Hard Cider</p>
+              <p>We just made your favorite cider variety pack even better. Meet the refreshed Hamburg Hard Cider 12-Pack — now starring our bold new Blackberry Lemon!</p>
+              <p class="beer-meta"><strong>6.0% ABV</strong> • COMING SOON • 12oz Can 12-Pack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="menu.html">Taproom Menu</a></li>
+            <li><a href="https://order.toasttab.com/online/hamburgbrewing" target="_blank" rel="noopener">Take Out</a></li>
+            <li><a href="https://www.toasttab.com/catering/hamburgbrewing/" target="_blank" rel="noopener">Large Party + Catering</a></li>
+            <li><a href="book-your-event.html">Book Your Event</a></li>
+            <li><a href="join-team.html">Join Our Team</a></li>
+            <li><a href="live-music.html">Live Music</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="bus-policy.html">Bus + Limo Policy</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="merch.html">Shop</a></li>
+            <li><a href="#" onclick="document.getElementById('search-toggle').click();return false;">Search</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Current Taproom Hours</h4>
+          <p><em>Updated 4/8/26</em></p>
+          <p>Monday – Tuesday: 4:00PM–10:00PM<br>Wednesday – Saturday: 12:00PM – 10:00PM<br>Sunday: 10:00AM – 8:00PM (Brunch 10am–12pm, Kitchen closed from 12–12:30pm)</p>
+          <p><strong>Sun. May 10 – Mother's Day Breakfast 9am–11am – Reservations Required. Open for regular service 12:30pm–8pm</strong></p>
+          <p>We do not take reservations, all seating first come first served.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:7166493249">(716) 649-3249</a></p>
+          <p>6553 Boston State Rd<br>Hamburg, NY 14075</p>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/hamburgbrewingcompany" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://instagram.com/hamburgbrewing" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://twitter.com/HamburgBrewing" target="_blank" rel="noopener" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Hamburg Brewing Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
