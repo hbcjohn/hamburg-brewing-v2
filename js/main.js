@@ -58,6 +58,15 @@ class MobileNav {
     this.closeBtn?.addEventListener('click', () => this.close());
     this.overlay?.addEventListener('click', () => this.close());
     
+    // Submenu toggles
+    this.nav?.querySelectorAll('.submenu-toggle').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        const parent = toggle.closest('.has-submenu');
+        parent.classList.toggle('open');
+      });
+    });
+    
     // Close on escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') this.close();

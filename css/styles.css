@@ -297,6 +297,53 @@ body {
   padding-left: 12px;
 }
 
+/* Mobile Nav Submenu */
+.main-nav .has-submenu > .submenu-toggle {
+  position: relative;
+}
+
+.main-nav .has-submenu > .submenu-toggle::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--color-brand);
+  transition: transform 0.3s ease;
+}
+
+.main-nav .has-submenu.open > .submenu-toggle::after {
+  content: '−';
+}
+
+.main-nav .submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 16px;
+}
+
+.main-nav .has-submenu.open .submenu {
+  max-height: 300px;
+}
+
+.main-nav .submenu li {
+  margin-bottom: 0;
+}
+
+.main-nav .submenu a {
+  font-size: 15px;
+  padding: 10px 0;
+  color: var(--color-text-light);
+  border-bottom: none;
+}
+
+.main-nav .submenu a:hover {
+  color: var(--color-brand);
+  padding-left: 8px;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
