@@ -7,6 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Size Selector Styles */
+    .size-selector { margin: 8px 0 12px; }
+    .size-selector label { font-size: 12px; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.5px; }
+    .size-selector select { width: 100%; padding: 8px 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: var(--font-body); font-size: 14px; margin-top: 4px; background: var(--color-bg); color: var(--color-text); cursor: pointer; }
+    .size-selector select:focus { outline: none; border-color: var(--color-brand); }
+  </style>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
 </head>
@@ -165,36 +172,58 @@
 
   <script src="js/main.js"></script>
   <script>
-    // Load products from JSON and render Snipcart buttons
+    // Load products from JSON and render with size selectors
     fetch('data/products.json')
       .then(r => r.json())
       .then(products => {
         const grid = document.getElementById('products-grid');
         grid.innerHTML = products.map(p => {
-          const sizeAttrs = p.sizes ? p.sizes.map((s, i) => `
-              data-item-custom${i+1}-name="Size"
-              data-item-custom${i+1}-options="${p.sizes.join('|')}"`).join('') : '';
+          const hasSizes = p.sizes && p.sizes.length > 0;
+          const sizeOptions = hasSizes ? p.sizes.map(s => `<option value="${s}">${s}</option>`).join('') : '';
+          const sizeSelectHtml = hasSizes ? `
+            <div class="size-selector" id="size-${p.id}">
+              <label>Size</label>
+              <select class="size-select" data-product-id="${p.id}">
+                ${sizeOptions}
+              </select>
+            </div>
+          ` : '';
+          const baseName = p.name;
           return `
-          <div class="product-card">
+          <div class="product-card" data-product-id="${p.id}">
             <div class="product-image">
               <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.parentElement.style.background='var(--color-product-bg)'">
             </div>
             <div class="product-info">
               <h3>${p.name}</h3>
               <p class="product-price">${p.priceFrom ? 'From ' : ''}$${p.price.toFixed(2)}</p>
-              <button class="btn btn-primary snipcart-add-item" style="width:100%;margin-top:12px;padding:12px;font-size:12px;"
+              ${sizeSelectHtml}
+              <button class="btn btn-primary snipcart-add-item add-to-cart-btn" style="width:100%;margin-top:12px;padding:12px;font-size:12px;"
                       data-item-id="${p.id}"
-                      data-item-name="${p.name}"
+                      data-item-name="${baseName}"
                       data-item-price="${p.price}"
                       data-item-url="/merch.html"
                       data-item-image="${p.image}"
-                      data-item-description="${p.description || 'Hamburg Brewing merchandise'}">
+                      data-item-description="${p.description || 'Hamburg Brewing merchandise'}"
+                      ${hasSizes ? 'data-item-custom1-name="Size" data-item-custom1-required="true"' : ''}>
                 Add to Cart
               </button>
             </div>
           </div>
         `;
         }).join('');
+        
+        // Wire up size selectors to update button attributes
+        document.querySelectorAll('.size-select').forEach(select => {
+          select.addEventListener('change', function() {
+            const productId = this.dataset.productId;
+            const card = this.closest('.product-card');
+            const btn = card.querySelector('.snipcart-add-item');
+            const size = this.value;
+            btn.setAttribute('data-item-custom1-options', size);
+            btn.setAttribute('data-item-name', btn.getAttribute('data-item-name').replace(/ \([^)]*\)$/, '') + ` (${size})`);
+          });
+        });
       });
   </script>
   <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
