@@ -8,8 +8,7 @@
     "description": "Give the gift of great beer! Gift cards available in multiple denominations.",
     "category": "gift-cards",
     "inStock": true,
-    "stock": 999,
-    "pickupOnly": true
+    "stock": 999
   },
   {
     "id": "flannel-womens",
@@ -20,8 +19,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 15,
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "pickupOnly": true
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": "flannel-mens",
@@ -32,8 +30,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 12,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "pickupOnly": true
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "hat-snapback",
@@ -43,8 +40,7 @@
     "description": "Green and gold snapback hat with embroidered Hamburg Brewing logo.",
     "category": "accessories",
     "inStock": true,
-    "stock": 8,
-    "pickupOnly": true
+    "stock": 8
   },
   {
     "id": "hat-rwb-snapback",
@@ -54,8 +50,7 @@
     "description": "Red, white and blue snapback hat with Hamburg Brewing logo.",
     "category": "accessories",
     "inStock": true,
-    "stock": 6,
-    "pickupOnly": true
+    "stock": 6
   },
   {
     "id": "vest",
@@ -66,8 +61,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 10,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "pickupOnly": true
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "mens-golf-polo",
@@ -78,8 +72,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 8,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "pickupOnly": true
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "mens-performance-hoodie",
@@ -90,8 +83,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 7,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "pickupOnly": true
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "womens-cropped-zip-up",
@@ -102,8 +94,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 9,
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "pickupOnly": true
+    "sizes": ["XS", "S", "M", "L", "XL"]
   },
   {
     "id": "black-quarter-zip",
@@ -114,8 +105,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 5,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "pickupOnly": true
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "grey-quarter-zip",
@@ -126,8 +116,7 @@
     "category": "apparel",
     "inStock": true,
     "stock": 5,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "pickupOnly": true
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "carhartt-beanie",
@@ -137,8 +126,7 @@
     "description": "Carhartt beanie hat with Hamburg Brewing logo.",
     "category": "accessories",
     "inStock": true,
-    "stock": 12,
-    "pickupOnly": true
+    "stock": 12
   },
   {
     "id": "hamburg-sticker",
@@ -148,8 +136,7 @@
     "description": "Hamburg Brewing Company vinyl sticker.",
     "category": "accessories",
     "inStock": true,
-    "stock": 50,
-    "pickupOnly": true
+    "stock": 50
   },
   {
     "id": "mug",
@@ -159,8 +146,7 @@
     "description": "Hamburg Brewing Company ceramic mug.",
     "category": "accessories",
     "inStock": true,
-    "stock": 20,
-    "pickupOnly": true
+    "stock": 20
   },
   {
     "id": "pint-glass",
@@ -170,8 +156,7 @@
     "description": "Hamburg Brewing Company pint glass.",
     "category": "accessories",
     "inStock": true,
-    "stock": 25,
-    "pickupOnly": true
+    "stock": 25
   },
   {
     "id": "cider-logo-pint-glass",
@@ -181,8 +166,7 @@
     "description": "Hamburg Brewing Company cider logo pint glass.",
     "category": "accessories",
     "inStock": true,
-    "stock": 20,
-    "pickupOnly": true
+    "stock": 20
   },
   {
     "id": "new-logo-pint-glass",
@@ -192,7 +176,6 @@
     "description": "Hamburg Brewing Company new logo pint glass.",
     "category": "accessories",
     "inStock": true,
-    "stock": 20,
-    "pickupOnly": true
+    "stock": 20
   }
 ]
