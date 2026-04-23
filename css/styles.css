@@ -152,9 +152,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: var(--color-bg-alpha);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-brand);
+  backdrop-filter: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   transition: var(--transition);
 }
 
@@ -188,7 +188,7 @@ body {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--color-text);
+  background: #ffffff;
   transition: var(--transition);
 }
 
@@ -198,7 +198,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--color-text);
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -212,13 +212,13 @@ body {
   border: none;
   cursor: pointer;
   padding: 8px;
-  color: var(--color-text);
+  color: #ffffff;
   transition: var(--transition);
   position: relative;
 }
 
 .header-icon:hover {
-  color: var(--color-brand);
+  color: rgba(255,255,255,0.7);
 }
 
 .cart-count {
