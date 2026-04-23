@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
 </head>
 <body>
 
@@ -68,9 +69,14 @@
         <button id="search-toggle" class="header-icon" aria-label="Search">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </button>
-        <button id="cart-toggle" class="header-icon" aria-label="Cart">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
-          <span id="cart-count" class="cart-count" style="display:none">0</span>
+        <button class="header-icon snipcart-checkout" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 6h15l-1.5 9h-12z"/>
+            <circle cx="9" cy="20" r="1"/>
+            <circle cx="18" cy="20" r="1"/>
+            <path d="M6 6L5 3H2"/>
+          </svg>
+          <span class="snipcart-items-count cart-count">0</span>
         </button>
       </div>
     </div>
@@ -206,5 +212,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="OGI1ODUyM2MtZTgzYS00MDQwLWI3NGUtMTliZDNlYjA0NDc3NjM5MTI1NTk1OTQwMTIzMjg2" data-config-modal-style="side"></div>
 </body>
 </html>
