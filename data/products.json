@@ -7,7 +7,9 @@
     "image": "https://cdn.shopify.com/s/files/1/0517/3552/7579/files/H_300x.png?v=1678376459",
     "description": "Give the gift of great beer! Gift cards available in multiple denominations.",
     "category": "gift-cards",
-    "inStock": true
+    "inStock": true,
+    "stock": 999,
+    "pickupOnly": true
   },
   {
     "id": "flannel-womens",
@@ -17,7 +19,9 @@
     "description": "Comfortable and stylish women's flannel shirt with Hamburg Brewing logo.",
     "category": "apparel",
     "inStock": true,
-    "sizes": ["XS", "S", "M", "L", "XL"]
+    "stock": 15,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "pickupOnly": true
   },
   {
     "id": "flannel-mens",
@@ -27,7 +31,9 @@
     "description": "Classic men's flannel shirt featuring the Hamburg Brewing logo.",
     "category": "apparel",
     "inStock": true,
-    "sizes": ["S", "M", "L", "XL", "XXL"]
+    "stock": 12,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "pickupOnly": true
   },
   {
     "id": "hat-snapback",
@@ -36,6 +42,8 @@
     "image": "images/hat-snapback.jpg",
     "description": "Green and gold snapback hat with embroidered Hamburg Brewing logo.",
     "category": "accessories",
-    "inStock": true
+    "inStock": true,
+    "stock": 8,
+    "pickupOnly": true
   }
 ]
