@@ -1414,6 +1414,148 @@ body {
   }
 }
 
+/* Beer Grid with Can Images */
+.beer-section {
+  margin-bottom: 60px;
+}
+
+.beer-section-title {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
+}
+
+.beer-section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-brand);
+  margin-top: 8px;
+}
+
+.beer-section-desc {
+  font-size: 15px;
+  color: var(--color-text-light);
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.beer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.beer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 12px;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.beer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-brand-light);
+}
+
+.beer-can-image {
+  width: 100%;
+  max-width: 160px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.beer-card:hover .beer-can-image {
+  transform: scale(1.05);
+}
+
+.beer-card h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.beer-card .beer-style {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-brand-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.beer-card .beer-meta {
+  font-size: 13px;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.beer-card .beer-desc {
+  font-size: 14px;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin-top: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Variety Pack Cards (non-linked) */
+.beer-card-static {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 12px;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  opacity: 0.85;
+}
+
+.beer-card-static .beer-can-image {
+  filter: grayscale(0.3);
+}
+
+@media (max-width: 768px) {
+  .beer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .beer-section-title {
+    font-size: 24px;
+  }
+  
+  .beer-can-image {
+    max-width: 120px;
+    height: 160px;
+  }
+}
+
 /* Desktop Header Navigation */
 .header-links {
   display: none;
