@@ -263,3 +263,111 @@
   color: var(--color-brand-dark);
   gap: 12px;
 }
+
+/* ===== MOBILE OPTIMIZATION ===== */
+
+@media (max-width: 768px) {
+  .product-hero {
+    padding: 16px 16px 12px;
+  }
+
+  .product-hero-image {
+    max-width: 200px;
+  }
+
+  .product-hero-info h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .product-badge {
+    font-size: 9px;
+    padding: 3px 10px;
+  }
+
+  .product-tagline {
+    font-size: 12px;
+  }
+
+  .product-details {
+    padding: 12px 0 20px;
+  }
+
+  .product-details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .product-details-block p {
+    font-size: 14px;
+  }
+
+  .product-details-block h2 {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .tasting-notes {
+    margin-top: 10px;
+  }
+
+  .tasting-note {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .food-pairings {
+    gap: 6px;
+  }
+
+  .food-pairing {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .related-beers-section {
+    padding: 20px 0 32px;
+  }
+
+  .related-beers-section h2 {
+    margin-bottom: 16px;
+  }
+
+  .related-beers-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 16px;
+  }
+
+  .related-beer-card-info {
+    padding: 8px 10px;
+  }
+
+  .related-beer-card-info h3 {
+    font-size: 11px;
+  }
+
+  .related-beer-card-info p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-hero-image {
+    max-width: 160px;
+  }
+
+  .product-hero-info h1 {
+    font-size: 24px;
+  }
+
+  .product-tagline {
+    font-size: 11px;
+  }
+
+  .related-beers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

@@ -1580,3 +1580,197 @@ body {
     color: var(--color-brand);
   }
 }
+
+/* ===== MOBILE OPTIMIZATION ===== */
+
+@media (max-width: 768px) {
+  /* Fix horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Age Gate */
+  .age-gate-modal {
+    padding: 32px 24px;
+    max-width: 340px;
+  }
+  
+  .age-gate-modal h2 {
+    font-size: 22px;
+  }
+  
+  /* Header */
+  .header-inner {
+    padding: 0 12px;
+  }
+  
+  .logo img {
+    height: 36px;
+  }
+  
+  /* Mobile Menu */
+  .main-nav {
+    width: 85vw;
+    max-width: 320px;
+  }
+  
+  .main-nav ul {
+    padding: 16px;
+  }
+  
+  .main-nav a {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  
+  .submenu a {
+    font-size: 13px;
+    padding: 8px 0 8px 16px;
+  }
+  
+  /* Page Headers */
+  .page-header {
+    padding: 32px 0;
+  }
+  
+  .page-header h1 {
+    font-size: 32px;
+  }
+  
+  /* Content */
+  .content-section {
+    padding: 32px 0;
+  }
+  
+  .content-body {
+    font-size: 15px;
+  }
+  
+  .content-body h2 {
+    font-size: 22px;
+  }
+  
+  .content-body p {
+    font-size: 15px;
+  }
+  
+  /* Beer Listing Carousels */
+  .beer-carousel {
+    gap: 16px;
+    padding: 8px 4px 20px;
+  }
+  
+  .beer-card-image-only {
+    width: 140px;
+  }
+  
+  .beer-card-image-only .beer-can-image {
+    height: 180px;
+  }
+  
+  .beer-carousel-nav {
+    display: none;
+  }
+  
+  .beer-section {
+    margin-bottom: 32px;
+  }
+  
+  .beer-section-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .beer-section-title::after {
+    width: 40px;
+    height: 2px;
+    margin-top: 6px;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 40px 0 24px;
+  }
+  
+  .footer-col h4 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    font-size: 12px;
+  }
+  
+  .footer-bottom {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .age-gate-modal {
+    padding: 24px 16px;
+  }
+  
+  .age-gate-modal h2 {
+    font-size: 20px;
+  }
+  
+  .age-gate-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .header-inner {
+    padding: 0 8px;
+  }
+  
+  .logo img {
+    height: 32px;
+  }
+  
+  .page-header h1 {
+    font-size: 28px;
+  }
+  
+  .beer-card-image-only {
+    width: 120px;
+  }
+  
+  .beer-card-image-only .beer-can-image {
+    height: 150px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .footer-col:first-child {
+    order: -1;
+  }
+}
+
+/* Touch-friendly tap targets */
+@media (pointer: coarse) {
+  .beer-card-image-only a {
+    min-height: 44px;
+  }
+  
+  .beer-carousel-nav {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .header-icon {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
