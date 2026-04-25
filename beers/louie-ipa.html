@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Louie IPA – Hamburg Brewing Company</title>
-  <meta name="description" content="{{BEER_DESCRIPTION}}">
+  <meta name="description" content="This IPA features a soft mouthfeel, a hint of bitterness, and a burst of fruity aromas from Mosaic and Amarillo hops. Louie is our flagship beer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,7 +52,8 @@
       <li><a href="../menu.html">Taproom Menu</a></li>
       <li><a href="https://order.toasttab.com/online/hamburgbrewing" target="_blank" rel="noopener">Take Out</a></li>
       <li><a href="https://www.toasttab.com/catering/hamburgbrewing/" target="_blank" rel="noopener">Large Party + Catering</a></li>
-      <li><a href="../beer.html">Beer + Hard Cider</a></li>
+      <li><a href="../beer.html">Beer</a></li>
+      <li><a href="../hard-cider.html">Hard Cider</a></li>
       <li><a href="../merch.html">Shop</a></li>
     </ul>
   </nav>
@@ -85,53 +86,27 @@
   </header>
 
   <main>
-    <!-- Beer Hero -->
+    <!-- Compact Hero -->
     <section class="beer-hero">
-      <div class="beer-hero-bg" style="background-image: url('../images/beers/louie-ipa.webp'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 0.15;"></div>
+      <div class="beer-hero-bg" style="background-image: url('../images/beers/louie-ipa.webp');"></div>
       <div class="beer-hero-gradient"></div>
       <div class="beer-hero-content">
         <span class="beer-hero-badge">India Pale Ale</span>
         <h1>Louie IPA</h1>
-        <p class="beer-hero-style">Bold. Bright. Unmistakable.</p>
-        <div class="beer-hero-stats">
-          <div class="beer-hero-stat">
-            <div class="beer-hero-stat-value">6.9%</div>
-            <div class="beer-hero-stat-label">ABV</div>
-          </div>
-          <div class="beer-hero-stat">
-            <div class="beer-hero-stat-value">55</div>
-            <div class="beer-hero-stat-label">IBU</div>
-          </div>
-          <div class="beer-hero-stat">
-            <div class="beer-hero-stat-value">Golden Amber</div>
-            <div class="beer-hero-stat-label">Color</div>
-          </div>
-        </div>
-        
+        <p class="beer-hero-style">6.9% ABV · 55 IBU · Year Round</p>
       </div>
     </section>
 
-    <!-- Beer Art Section -->
-    <section class="beer-art-section">
-      <div class="beer-bubbles" aria-hidden="true"></div>
-      <div class="beer-art-container">
-        <div class="beer-art-frame">
-          <div class="beer-art-placeholder" style="background: none; padding: 0;">
-            <img src="../images/beers/louie-ipa.webp" alt="Louie IPA" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-          </div>
-        </div>
-        <p class="beer-art-caption">Final artwork will be displayed here. Upload your beer can/bottle artwork to replace this placeholder.</p>
-      </div>
-    </section>
-
-    <!-- Beer Details -->
+    <!-- Product Image + Details in one section -->
     <section class="beer-details-section">
       <div class="beer-details-grid">
         <div class="beer-details-block">
-          <h2>About This Beer</h2>
-          <p>This IPA features a soft mouthfeel, a hint of bitterness, and a burst of fruity aromas from Mosaic and Amarillo hops. Louie is our flagship beer—the one that started it all. Named after a legend, brewed for the bold.</p>
+          <div style="max-width: 280px; margin: 0 auto 20px;">
+            <img src="../images/beers/louie-ipa.webp" alt="Louie IPA" style="width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.2));">
+          </div>
+          <p>This IPA features a soft mouthfeel, a hint of bitterness, and a burst of fruity aromas from Mosaic and Amarillo hops. Louie is our flagship beer—the one that started it all.</p>
           <div class="tasting-notes">
-                        <span class="tasting-note">Tropical Fruit</span>
+            <span class="tasting-note">Tropical Fruit</span>
             <span class="tasting-note">Citrus</span>
             <span class="tasting-note">Pine</span>
             <span class="tasting-note">Floral</span>
@@ -139,7 +114,7 @@
           </div>
         </div>
         <div class="beer-details-block">
-          <h2>Specifications</h2>
+          <h2>Details</h2>
           <ul class="beer-meta-list">
             <li><strong>Style</strong> <span>India Pale Ale</span></li>
             <li><strong>ABV</strong> <span>6.9%</span></li>
@@ -148,81 +123,42 @@
             <li><strong>Availability</strong> <span>Year-Round</span></li>
             <li><strong>Packaging</strong> <span>12oz 6-Pack Cans</span></li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Food Pairings -->
-    <section class="content-section" style="background: var(--color-bg-dark);">
-      <div class="container">
-        <div class="content-body" style="max-width: 800px; margin: 0 auto;">
-          <h2 style="text-align: center; font-family: var(--font-heading); font-size: 14px; text-transform: uppercase; letter-spacing: 3px; color: var(--color-brand); margin-bottom: 48px;">Perfect Pairings</h2>
+          <h2 style="margin-top: 24px;">Pairs With</h2>
           <div class="food-pairings">
-                        <div class="food-pairing">
-              <span class="food-pairing-icon">🍔</span>
-              <span class="food-pairing-name">Burgers</span>
-            </div>
-            <div class="food-pairing">
-              <span class="food-pairing-icon">🌮</span>
-              <span class="food-pairing-name">Tacos</span>
-            </div>
-            <div class="food-pairing">
-              <span class="food-pairing-icon">🍕</span>
-              <span class="food-pairing-name">Pizza</span>
-            </div>
-            <div class="food-pairing">
-              <span class="food-pairing-icon">🧀</span>
-              <span class="food-pairing-name">Sharp Cheddar</span>
-            </div>
-            <div class="food-pairing">
-              <span class="food-pairing-icon">🌶️</span>
-              <span class="food-pairing-name">Spicy Wings</span>
-            </div>
-            <div class="food-pairing">
-              <span class="food-pairing-icon">🥗</span>
-              <span class="food-pairing-name">Citrus Salad</span>
-            </div>
+            <span class="food-pairing">Burgers</span>
+            <span class="food-pairing">Tacos</span>
+            <span class="food-pairing">Pizza</span>
+            <span class="food-pairing">Sharp Cheddar</span>
+            <span class="food-pairing">Spicy Wings</span>
+            <span class="food-pairing">Citrus Salad</span>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="beer-cta-section">
-      <h2>Find It Near You</h2>
-      <p>Available on tap at the brewery and at fine local craft beer retailers.</p>
-      <a href="../contact.html" class="btn btn-primary">Visit the Taproom</a>
     </section>
 
     <!-- Related Beers -->
     <section class="related-beers-section">
       <h2>You Might Also Enjoy</h2>
       <div class="related-beers-grid">
-                <a href="lake-view-lager.html" class="related-beer-card">
-          <div class="related-beer-card-image">
-            <span style="position: relative; z-index: 1;">🍺</span>
-          </div>
+        <a href="lake-view-lager.html" class="related-beer-card">
+          <div class="related-beer-card-image"></div>
           <div class="related-beer-card-info">
             <h3>Lake View Lager</h3>
-            <p>Lager • 5.2% ABV</p>
+            <p>Lager · 5.2% ABV</p>
           </div>
         </a>
         <a href="berry-sneaky.html" class="related-beer-card">
-          <div class="related-beer-card-image">
-            <span style="position: relative; z-index: 1;">🫐</span>
-          </div>
+          <div class="related-beer-card-image"></div>
           <div class="related-beer-card-info">
             <h3>Berry Sneaky</h3>
-            <p>Fruited Sour Ale • 7.2% ABV</p>
+            <p>Fruited Sour Ale · 7.2% ABV</p>
           </div>
         </a>
         <a href="big-lou.html" class="related-beer-card">
-          <div class="related-beer-card-image">
-            <span style="position: relative; z-index: 1;">🍺</span>
-          </div>
+          <div class="related-beer-card-image"></div>
           <div class="related-beer-card-info">
             <h3>Big Lou</h3>
-            <p>Double India Pale Ale • 9.0% ABV</p>
+            <p>Double IPA · 9.0% ABV</p>
           </div>
         </a>
       </div>
@@ -238,7 +174,8 @@
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact Us</a></li>
             <li><a href="../menu.html">Taproom Menu</a></li>
-            <li><a href="../beer.html">Beer + Hard Cider</a></li>
+            <li><a href="../beer.html">Beer</a></li>
+            <li><a href="../hard-cider.html">Hard Cider</a></li>
             <li><a href="../merch.html">Shop</a></li>
           </ul>
         </div>
@@ -262,27 +199,5 @@
   </footer>
 
   <script src="../js/main.js"></script>
-  <script>
-    // Generate floating bubbles
-    function createBubbles() {
-      const container = document.querySelector('.beer-bubbles');
-      if (!container) return;
-      for (let i = 0; i < 20; i++) {
-        const bubble = document.createElement('div');
-        bubble.className = 'beer-bubble';
-        const size = Math.random() * 20 + 8;
-        bubble.style.cssText = `
-          width: ${size}px;
-          height: ${size}px;
-          left: ${Math.random() * 100}%;
-          bottom: -50px;
-          animation-duration: ${Math.random() * 8 + 6}s;
-          animation-delay: ${Math.random() * 5}s;
-        `;
-        container.appendChild(bubble);
-      }
-    }
-    createBubbles();
-  </script>
 </body>
 </html>
