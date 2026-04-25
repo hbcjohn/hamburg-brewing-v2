@@ -93,61 +93,67 @@
     <section class="content-section">
       <div class="container">
         <div class="content-body">
+
+          <!-- YEAR ROUND CIDER -->
           <div class="beer-section">
             <h2 class="beer-section-title">Year Round</h2>
-            <p class="beer-section-desc">Crisp, refreshing ciders available all year long.</p>
-            <div class="beer-grid">
-              <a href="beers/original-hard-cider.html" class="beer-card">
-                <img src="images/beers/original-hard-cider.webp" alt="Original Hard Cider Can" class="beer-can-image">
-                <h3>Original Hard Cider</h3>
-                <p class="beer-style">Hard Cider</p>
-                <p class="beer-desc">Crisp, clean, and refreshing flavor with just enough sweetness to remind you that it was born from fruit.</p>
-                <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/blueberry-peach-cider.html" class="beer-card">
-                <img src="images/beers/blueberry-peach-cider.webp" alt="Blueberry Peach Hard Cider Can" class="beer-can-image">
-                <h3>Blueberry Peach Hard Cider</h3>
-                <p class="beer-style">Hard Cider</p>
-                <p class="beer-desc">Bursting with juicy notes of blueberries and a bouquet of sweet peach aroma.</p>
-                <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz 6-Packs &amp; 19.2oz Cans</p>
-              </a>
-              <a href="beers/nice-and-dry-cider.html" class="beer-card">
-                <img src="images/beers/nice-and-dry-cider.webp" alt="Nice and Dry Hard Cider Can" class="beer-can-image">
-                <h3>Nice and Dry Hard Cider</h3>
-                <p class="beer-style">Hard Cider</p>
-                <p class="beer-desc">You'll experience a pleasant balance between acidity and sourness with a hidden touch of sweetness.</p>
-                <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/pear-cider.html" class="beer-card">
-                <img src="images/beers/pear-cider.webp" alt="Pear Hard Cider Can" class="beer-can-image">
-                <h3>Pear Hard Cider</h3>
-                <p class="beer-style">Hard Cider</p>
-                <p class="beer-desc">Velvety essence of ripe pears, perfectly blended with the bright, clean taste of orchard-fresh fruit.</p>
-                <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz 6-Packs</p>
-              </a>
+            <div class="beer-carousel-container">
+              <button class="beer-carousel-nav prev" onclick="scrollCarousel(this, -1)" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <div class="beer-carousel">
+                <div class="beer-card-image-only">
+                  <a href="beers/original-hard-cider.html">
+                    <img src="images/beers/original-hard-cider.webp" alt="Original Hard Cider" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/blueberry-peach-cider.html">
+                    <img src="images/beers/blueberry-peach-cider.webp" alt="Blueberry Peach Hard Cider" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/nice-and-dry-cider.html">
+                    <img src="images/beers/nice-and-dry-cider.webp" alt="Nice and Dry Hard Cider" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/pear-cider.html">
+                    <img src="images/beers/pear-cider.webp" alt="Pear Hard Cider" class="beer-can-image">
+                  </a>
+                </div>
+              </div>
+              <button class="beer-carousel-nav next" onclick="scrollCarousel(this, 1)" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
             </div>
           </div>
 
+          <!-- SEASONAL CIDER -->
           <div class="beer-section">
             <h2 class="beer-section-title">Seasonal</h2>
-            <p class="beer-section-desc">Limited-time cider releases throughout the year.</p>
-            <div class="beer-grid">
-              <a href="beers/strawberry-cider.html" class="beer-card">
-                <img src="images/beers/strawberry-cider.webp" alt="Strawberry Hard Cider Can" class="beer-can-image">
-                <h3>Strawberry Hard Cider</h3>
-                <p class="beer-style">Hard Cider</p>
-                <p class="beer-desc">Each sip envelops your senses with the sweet aromatic flavors of ripe strawberries and fresh apples.</p>
-                <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/pomegranate-cider.html" class="beer-card">
-                <img src="images/beers/pomegranate-cider.webp" alt="Pomegranate Hard Cider Can" class="beer-can-image">
-                <h3>Pomegranate Hard Cider</h3>
-                <p class="beer-style">Hard Cider</p>
-                <p class="beer-desc">A crisp and refreshing blend of rich sweetness with a subtle tang.</p>
-                <p class="beer-meta"><strong>6.0% ABV</strong> • 12oz 6-Packs</p>
-              </a>
+            <div class="beer-carousel-container">
+              <button class="beer-carousel-nav prev" onclick="scrollCarousel(this, -1)" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <div class="beer-carousel">
+                <div class="beer-card-image-only">
+                  <a href="beers/strawberry-cider.html">
+                    <img src="images/beers/strawberry-cider.webp" alt="Strawberry Hard Cider" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/pomegranate-cider.html">
+                    <img src="images/beers/pomegranate-cider.webp" alt="Pomegranate Hard Cider" class="beer-can-image">
+                  </a>
+                </div>
+              </div>
+              <button class="beer-carousel-nav next" onclick="scrollCarousel(this, 1)" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -204,6 +210,13 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    function scrollCarousel(btn, direction) {
+      const container = btn.parentElement.querySelector('.beer-carousel');
+      const scrollAmount = 224;
+      container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
   <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
   <div hidden id="snipcart" data-api-key="OGI1ODUyM2MtZTgzYS00MDQwLWI3NGUtMTliZDNlYjA0NDc3NjM5MTI1NTk1OTQwMTIzMjg2" data-config-modal-style="side"></div>
 </body>

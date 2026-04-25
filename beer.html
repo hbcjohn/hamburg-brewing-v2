@@ -97,79 +97,75 @@
           <!-- YEAR ROUND BEERS -->
           <div class="beer-section">
             <h2 class="beer-section-title">Year Round</h2>
-            <p class="beer-section-desc">Our core lineup available all year long.</p>
-            <div class="beer-grid">
-              <a href="beers/louie-ipa.html" class="beer-card">
-                <img src="images/beers/louie-ipa.webp" alt="Louie IPA Can" class="beer-can-image">
-                <h3>Louie IPA</h3>
-                <p class="beer-style">India Pale Ale</p>
-                <p class="beer-desc">This IPA features a soft mouthfeel, hint of bitterness, &amp; a burst of fruity aromas from Mosaic &amp; Amarillo hops.</p>
-                <p class="beer-meta"><strong>6.9% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/lake-view-lager.html" class="beer-card">
-                <img src="images/beers/lake-view-lager.webp" alt="Lake View Lager Can" class="beer-can-image">
-                <h3>Lake View Lager</h3>
-                <p class="beer-style">Lager</p>
-                <p class="beer-desc">A crisp, refreshing lager created for everyday life.</p>
-                <p class="beer-meta"><strong>5.2% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/berry-sneaky.html" class="beer-card">
-                <img src="images/beers/berry-sneaky.webp" alt="Berry Sneaky Can" class="beer-can-image">
-                <h3>Berry Sneaky</h3>
-                <p class="beer-style">Fruited Sour Ale</p>
-                <p class="beer-desc">This sour is packed with Blackberry, Blueberry, Raspberry, Strawberry and Milk Sugar.</p>
-                <p class="beer-meta"><strong>7.2% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/big-lou.html" class="beer-card">
-                <img src="images/beers/big-lou.webp" alt="Big Lou Can" class="beer-can-image">
-                <h3>Big Lou</h3>
-                <p class="beer-style">Double India Pale Ale</p>
-                <p class="beer-desc">If you're a fan of our Louie IPA, you'll be an even bigger fan of Big Lou! We've doubled down on the flavor, mouthfeel and aroma of our flagship IPA.</p>
-                <p class="beer-meta"><strong>9.0% ABV</strong> • 19.2oz Cans</p>
-              </a>
-              <a href="beers/lil-guy.html" class="beer-card">
-                <img src="images/beers/lil-guy.webp" alt="Lil Guy Can" class="beer-can-image">
-                <h3>Lil Guy</h3>
-                <p class="beer-style">Little IPA</p>
-                <p class="beer-desc">That's it, it's go time for fat flavor in a little can with this highly drinkable 3.9% IPA.</p>
-                <p class="beer-meta"><strong>3.9% ABV</strong> • 12oz 12-Packs</p>
-              </a>
+            <div class="beer-carousel-container">
+              <button class="beer-carousel-nav prev" onclick="scrollCarousel(this, -1)" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <div class="beer-carousel">
+                <div class="beer-card-image-only">
+                  <a href="beers/louie-ipa.html">
+                    <img src="images/beers/louie-ipa.webp" alt="Louie IPA" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/lake-view-lager.html">
+                    <img src="images/beers/lake-view-lager.webp" alt="Lake View Lager" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/berry-sneaky.html">
+                    <img src="images/beers/berry-sneaky.webp" alt="Berry Sneaky" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/big-lou.html">
+                    <img src="images/beers/big-lou.webp" alt="Big Lou" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/lil-guy.html">
+                    <img src="images/beers/lil-guy.webp" alt="Lil Guy" class="beer-can-image">
+                  </a>
+                </div>
+              </div>
+              <button class="beer-carousel-nav next" onclick="scrollCarousel(this, 1)" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
             </div>
           </div>
 
           <!-- SEASONAL BEERS -->
           <div class="beer-section">
             <h2 class="beer-section-title">Seasonal</h2>
-            <p class="beer-section-desc">Limited-time releases throughout the year.</p>
-            <div class="beer-grid">
-              <a href="beers/irish-red.html" class="beer-card">
-                <img src="images/beers/irish-red.webp" alt="Irish Red Can" class="beer-can-image">
-                <h3>Irish Red</h3>
-                <p class="beer-style">Irish Style Red Ale</p>
-                <p class="beer-desc">A smooth malty ale backed by a good dusting of roasted barley, just like the ones across the pond.</p>
-                <p class="beer-meta"><strong>4.8% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/summer-lager.html" class="beer-card">
-                <img src="images/beers/summer-lager.webp" alt="Summer Lager Can" class="beer-can-image">
-                <h3>Summer Lager</h3>
-                <p class="beer-style">Lager with a Kiss of Lime</p>
-                <p class="beer-desc">A simple and easy-drinking beer with a kiss of lime.</p>
-                <p class="beer-meta"><strong>4.2% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/oktoberfest.html" class="beer-card">
-                <img src="images/beers/oktoberfest.webp" alt="Oktoberfest Can" class="beer-can-image">
-                <h3>Oktoberfest</h3>
-                <p class="beer-style">Märzen Lager</p>
-                <p class="beer-desc">Big malty flavor from Vienna style malts fade away to a clean bitterness from Perle hops for a full-flavored and balanced experience.</p>
-                <p class="beer-meta"><strong>5.7% ABV</strong> • 12oz 6-Packs</p>
-              </a>
-              <a href="beers/frosty-the-ipa.html" class="beer-card">
-                <img src="images/beers/frosty-the-ipa.webp" alt="Frosty the IPA Can" class="beer-can-image">
-                <h3>Frosty the IPA</h3>
-                <p class="beer-style">India Pale Ale</p>
-                <p class="beer-desc">This is no fairytale, our remarkably crushable winter IPA is loaded with bright citrusy Mosaic and Simcoe hops to get you through the cold.</p>
-                <p class="beer-meta"><strong>5.5% ABV</strong> • 12oz 6-Packs</p>
-              </a>
+            <div class="beer-carousel-container">
+              <button class="beer-carousel-nav prev" onclick="scrollCarousel(this, -1)" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <div class="beer-carousel">
+                <div class="beer-card-image-only">
+                  <a href="beers/irish-red.html">
+                    <img src="images/beers/irish-red.webp" alt="Irish Red" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/summer-lager.html">
+                    <img src="images/beers/summer-lager.webp" alt="Summer Lager" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/oktoberfest.html">
+                    <img src="images/beers/oktoberfest.webp" alt="Oktoberfest" class="beer-can-image">
+                  </a>
+                </div>
+                <div class="beer-card-image-only">
+                  <a href="beers/frosty-the-ipa.html">
+                    <img src="images/beers/frosty-the-ipa.webp" alt="Frosty the IPA" class="beer-can-image">
+                  </a>
+                </div>
+              </div>
+              <button class="beer-carousel-nav next" onclick="scrollCarousel(this, 1)" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
             </div>
           </div>
 
@@ -229,6 +225,13 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    function scrollCarousel(btn, direction) {
+      const container = btn.parentElement.querySelector('.beer-carousel');
+      const scrollAmount = 224; // card width + gap
+      container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
   <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
   <div hidden id="snipcart" data-api-key="OGI1ODUyM2MtZTgzYS00MDQwLWI3NGUtMTliZDNlYjA0NDc3NjM5MTI1NTk1OTQwMTIzMjg2" data-config-modal-style="side"></div>
 </body>
