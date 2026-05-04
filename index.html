@@ -9,10 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/scroll-animations.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
 </head>
 <body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
 
   <!-- Age Gate -->
   <div id="age-gate" class="age-gate-overlay">
@@ -109,12 +115,12 @@
   <!-- Promotions / Events -->
   <section class="section section-alt">
     <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>What's Happening</h2>
-        <div class="section-divider"></div>
+      <div class="section-header reveal">
+        <h2 class="display-text" style="font-size:clamp(36px, 7vw, 96px);">What's Happening</h2>
+        <div class="section-divider animated"></div>
       </div>
-      <div class="events-list">
-        <div class="event-card animate-on-scroll">
+      <div class="events-list stagger-children">
+        <div class="event-card morph-card reveal">
           <div class="event-date">
             <span class="month">May</span>
             <span class="day">10</span>
@@ -125,7 +131,7 @@
             <a href="contact.html" class="btn btn-primary" style="margin-top:12px;padding:10px 20px;font-size:12px;">Make Reservation</a>
           </div>
         </div>
-        <div class="event-card animate-on-scroll">
+        <div class="event-card morph-card reveal">
           <div class="event-date">
             <span class="month">Now</span>
             <span class="day">2026</span>
@@ -136,7 +142,7 @@
             <a href="contact.html" class="btn btn-primary" style="margin-top:12px;padding:10px 20px;font-size:12px;">More Details</a>
           </div>
         </div>
-        <div class="event-card animate-on-scroll">
+        <div class="event-card morph-card reveal">
           <div class="event-date">
             <span class="month">New</span>
             <span class="day">Beer</span>
@@ -153,12 +159,12 @@
   <!-- Features -->
   <section id="features" class="section">
     <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Experience HBC</h2>
-        <div class="section-divider"></div>
+      <div class="section-header reveal">
+        <h2 class="display-text" style="font-size:clamp(36px, 7vw, 96px);">Experience HBC</h2>
+        <div class="section-divider animated"></div>
       </div>
-      <div class="features-grid">
-        <div class="feature-card animate-on-scroll">
+      <div class="features-grid stagger-children">
+        <div class="feature-card morph-card reveal">
           <div class="feature-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
@@ -172,7 +178,7 @@
           <p>Come on down and enjoy one of our signature brews, fine wines, hard drinks, cocktails or delicious food offerings.</p>
           <a href="contact.html" class="btn btn-primary" style="margin-top:16px;padding:12px 24px;font-size:12px;">View Tap List</a>
         </div>
-        <div class="feature-card animate-on-scroll">
+        <div class="feature-card morph-card reveal">
           <div class="feature-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
@@ -183,7 +189,7 @@
           <p>Interested in hosting your next event at Hamburg Brewing Company? From weddings to work parties, we've got you covered!</p>
           <a href="contact.html" class="btn btn-primary" style="margin-top:16px;padding:12px 24px;font-size:12px;">Book Your Event</a>
         </div>
-        <div class="feature-card animate-on-scroll">
+        <div class="feature-card morph-card reveal">
           <div class="feature-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
@@ -192,7 +198,7 @@
             </svg>
           </div>
           <h3>Dinner to Go!</h3>
-          <p>We now offer online ordering! What's for dinner tonight? Pizza &amp; Beer! Order through Toast for pickup.</p>
+          <p>We now offer online ordering! What's for dinner tonight? Pizza & Beer! Order through Toast for pickup.</p>
           <a href="https://www.toasttab.com/hamburg-brewing-company/v3" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:16px;padding:12px 24px;font-size:12px;">Order Online</a>
         </div>
       </div>
@@ -200,15 +206,15 @@
   </section>
 
   <!-- About Teaser -->
-  <section class="section section-alt">
+  <section class="section section-alt parallax-section">
     <div class="container">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1100px;margin:0 auto;">
-        <div class="animate-on-scroll">
+        <div class="parallax-image reveal-left">
           <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/6thAnniversary-11_copy_300x.jpg?v=1678139337" 
                alt="Hamburg Brewing interior" 
                style="width:100%;border-radius:8px;box-shadow:var(--shadow-hover);">
         </div>
-        <div class="animate-on-scroll">
+        <div class="reveal-right">
           <h2 style="font-family:var(--font-heading);font-size:32px;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;">About Us</h2>
           <div style="width:60px;height:3px;background:var(--color-brand);margin-bottom:24px;"></div>
           <p style="color:var(--color-text-light);line-height:1.8;margin-bottom:20px;">
@@ -227,13 +233,13 @@
   <!-- Merch Teaser -->
   <section class="section">
     <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Shop Merch</h2>
-        <div class="section-divider"></div>
+      <div class="section-header reveal">
+        <h2 class="display-text" style="font-size:clamp(36px, 7vw, 96px);">Shop Merch</h2>
+        <div class="section-divider animated"></div>
       </div>
-      <div class="products-grid">
-        <div class="product-card animate-on-scroll">
-          <div class="product-image">
+      <div class="products-grid stagger-children">
+        <div class="product-card morph-card reveal">
+          <div class="product-image morph-image">
             <img src="https://cdn.shopify.com/s/files/1/0517/3552/7579/files/H_300x.png?v=1678376459" alt="HBC Gift Card" loading="lazy">
           </div>
           <div class="product-info">
@@ -253,8 +259,8 @@
             </button>
           </div>
         </div>
-        <div class="product-card animate-on-scroll">
-          <div class="product-image">
+        <div class="product-card morph-card reveal">
+          <div class="product-image morph-image">
             <img src="images/flannel-womens.jpg" alt="Women's Flannel" loading="lazy" onerror="this.parentElement.style.background='var(--color-product-bg)'">
           </div>
           <div class="product-info">
@@ -274,8 +280,8 @@
             </button>
           </div>
         </div>
-        <div class="product-card animate-on-scroll">
-          <div class="product-image">
+        <div class="product-card morph-card reveal">
+          <div class="product-image morph-image">
             <img src="images/flannel-mens.jpg" alt="Men's Flannel" loading="lazy" onerror="this.parentElement.style.background='var(--color-product-bg)'">
           </div>
           <div class="product-info">
@@ -295,12 +301,12 @@
             </button>
           </div>
         </div>
-        <div class="product-card animate-on-scroll">
-          <div class="product-image">
+        <div class="product-card morph-card reveal">
+          <div class="product-image morph-image">
             <img src="images/hat-snapback.jpg" alt="Green and Gold Snapback Hat" loading="lazy" onerror="this.parentElement.style.background='var(--color-product-bg)'">
           </div>
           <div class="product-info">
-            <h3>Green &amp; Gold Snapback</h3>
+            <h3>Green & Gold Snapback</h3>
             <p class="product-price">$15.00</p>
             <button class="btn btn-primary snipcart-add-item" style="width:100%;margin-top:12px;padding:12px;font-size:12px;"
                     data-item-id="hat-snapback"
@@ -327,32 +333,32 @@
         <h2 style="font-family:var(--font-heading);font-size:32px;text-transform:uppercase;letter-spacing:2px;color:white;">Taproom Hours</h2>
         <div style="width:60px;height:3px;background:var(--color-brand);margin:16px auto 0;"></div>
       </div>
-      <div class="hours-grid">
-        <div class="hours-day">
+      <div class="hours-grid stagger-children">
+        <div class="hours-day reveal">
           <h4>Monday</h4>
           <p>4:00PM - 10:00PM</p>
         </div>
-        <div class="hours-day">
+        <div class="hours-day reveal">
           <h4>Tuesday</h4>
           <p>4:00PM - 10:00PM</p>
         </div>
-        <div class="hours-day">
+        <div class="hours-day reveal">
           <h4>Wednesday</h4>
           <p>12:00PM - 10:00PM</p>
         </div>
-        <div class="hours-day">
+        <div class="hours-day reveal">
           <h4>Thursday</h4>
           <p>12:00PM - 10:00PM</p>
         </div>
-        <div class="hours-day">
+        <div class="hours-day reveal">
           <h4>Friday</h4>
           <p>12:00PM - 10:00PM</p>
         </div>
-        <div class="hours-day">
+        <div class="hours-day reveal">
           <h4>Saturday</h4>
           <p>12:00PM - 10:00PM</p>
         </div>
-        <div class="hours-day">
+        <div class="hours-day reveal">
           <h4>Sunday</h4>
           <p>10:00AM - 8:00PM</p>
           <p style="font-size:12px;opacity:0.7;margin-top:4px;">Brunch 10am-12pm</p>
@@ -367,7 +373,7 @@
   <!-- Newsletter -->
   <section class="section">
     <div class="container" style="max-width:600px;text-align:center;">
-      <div class="animate-on-scroll">
+      <div class="reveal">
         <h2 style="font-family:var(--font-heading);font-size:28px;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;">Newsletter Sign Up</h2>
         <div class="section-divider"></div>
         <p style="color:var(--color-text-light);margin:20px 0 28px;">Stay up to date with new releases, events, and exclusive offers.</p>
@@ -469,6 +475,7 @@
   </a>
 
   <script src="js/main.js"></script>
+  <script src="js/scroll-animations.js"></script>
   <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
   <div hidden id="snipcart" data-api-key="OGI1ODUyM2MtZTgzYS00MDQwLWI3NGUtMTliZDNlYjA0NDc3NjM5MTI1NTk1OTQwMTIzMjg2" data-config-modal-style="side"></div>
 </body>
